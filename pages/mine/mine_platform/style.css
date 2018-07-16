@@ -1,0 +1,211 @@
+.tab{
+	display:flex;
+	display:-webkit-flex;
+	display:-webkit-box;
+	background-color: #fff;
+	height:.5rem;
+	line-height:.5rem;
+	text-align: center;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.tab > div{
+    flex:1;
+    -webkit-flex:1;
+    -webkit-box-flex:1;
+}
+
+.tab a{
+	font-size: .16rem;
+	color:#969696;
+}
+
+.tab a.active{
+	display:inline-block;
+    color:#fd5353;
+    border-bottom: 2px solid #fd5353;
+    height:100%;
+    width:70%;
+}
+
+.organiztion{
+	background-color: #fff;
+	margin-bottom: .15rem;
+}
+
+.organiztion.jinfu-organiztion {
+	margin-bottom: .15rem;
+}
+
+.organiztion:last-child {
+	margin-bottom: 0;
+}
+
+.organiztion p {
+	color: #969696;
+	line-height: 150%;
+}
+
+.info {
+	padding: .2rem .12rem .1rem .12rem;
+	border-bottom: solid 1px #f1f1f1;
+}
+
+.info-item {
+	float: left;
+}
+
+.info-item-left {
+	width: 60%;
+}
+
+.jinfu-title {
+	line-height: .66rem;
+}
+
+.info-item-right {
+	width: 40%;
+	cursor: pointer;
+}
+
+.info-item-right p {
+	font-size: .15rem;
+	line-height: .66rem;
+	text-align: right;
+	padding-right: 0.25rem;
+}
+
+.money {
+	padding: .12rem;
+}
+
+.money h4 {
+	font-size: .16rem;
+}
+.money-item{
+	float: left;
+}
+.money .money-item:first-child {
+	width: 1.6rem;
+}
+.money .money-item:nth-of-type(2) {
+	width: 1.28rem;
+}
+.money .money-item:last-child {
+	width: 1.02rem;
+}
+
+.org-box{
+	display: none;
+	background-color: #fff;
+}
+
+.unbind-org li{
+	position: relative;
+	height:.57rem;
+	line-height: .57rem;
+	padding:0 .15rem;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.unbind-org a {
+	font-size: .18rem;
+}
+
+.bind-button{
+	position: absolute;
+	top:.15rem;
+	right:.15rem;
+	display:inline-block;
+	width:.55rem;
+	height:.26rem;
+	line-height: .26rem;
+	color:#fff;
+	font-size: .14rem;
+	text-align: center;
+	border-radius: .05rem;
+	background-color: #7e99ce;
+}
+
+/* 累计投资与收益 */
+.total-money {
+	height: 1.1rem;
+	padding: 0 .14rem;
+	background: #fff;
+}
+
+.total-money p:nth-child(1) {
+	padding-top: .21rem;
+}
+
+.total-text {
+	font-size: .18rem;
+	color: #969696;
+	height: .24rem;
+	line-height: .24rem;
+}
+
+.total-invest-value {
+	font-size: .52rem;
+	color: #fd5353;
+}
+
+.total-profit-value {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: .22rem;
+	color: #fd5353;
+}
+
+#invest-detail {
+	font-size: .15rem;
+	position: absolute;
+	right: .14rem;
+	top: .45rem;
+	color: #969696;
+	padding-right: .2rem;
+}
+
+/* 平台 */
+
+.platform-title {
+	padding: .1rem 0 .04rem .14rem;
+	color: #646464;
+}
+
+.platform-title span {
+	color: #fd5353;
+}
+
+.no-bind {
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	background: #fff;
+}
+
+.no-unbind {
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	background: #fff;
+}
+
+.no-unbind span {
+	font-size: .16rem;
+	color: #fd5353;
+}
+.arrow{
+	background-image: url(../../../static/images/arrow-depth.png);
+}
+
+/**
+* bubbleTip样式重改
+*/
+.bubbleWraper .bubble .bubbleButton a{
+    color: #323232;
+    font-size: 0.2rem;
+}
+.bubble p{
+    text-align: left;
+}

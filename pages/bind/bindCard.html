@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>银行卡绑定</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper" >
+	     <div class="inputBox">
+	     	<div>
+		     	<label for="name">姓名</label>
+		     	<input id="name" type="text" placeholder="请输入持卡人姓名" length="10">
+	     	</div>
+	     	<div>
+		     	<label for="identity">身份证</label>
+		     	<input id="identity" type="text" placeholder="请输入持卡人身份证号" length="18">
+	     	</div>
+	     </div>
+
+	     <div class="inputBox">
+	     	<div>
+		     	<label for="card">银行卡</label>
+		     	<input id="card" type="tel" placeholder="请输入银行卡号" length="22">
+	     	</div>
+	     	<div>
+		     	<label for="select">开户银行</label>
+		     	<select id="select">
+		     		<option value="">请选择开户银行</option>
+		     	</select>
+	     	</div>
+	     </div>
+
+	     <div class="inputBox">
+	     	<div>
+		     	<label for="mobile">手机号码</label>
+		     	<input id="mobile" type="tel" placeholder="请输入银行预留手机号码" length="11">
+	     	</div>
+	     </div>
+
+	     <div class="buttonBox">
+	     	 <a class="button">绑定</a>
+	     </div>
+	</div>
+	<script type="text/javascript"> 	
+		require('bindCard/bindCard');
+	</script>	
+</body>
+
+</html>

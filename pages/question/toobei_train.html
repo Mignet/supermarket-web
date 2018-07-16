@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>T呗小白训练营</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+  <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+  <!-- @require static/css/public.css -->
+  <script type="text/javascript" src="public/mod.js" data-loader></script>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <style type="text/css">
+  .center {
+    text-align: center;
+  }
+  .bodyBottom{
+    position:fixed;
+  }
+  </style>
+</head>
+<body>
+  <div class="wraper">
+    <ul class="flex tab-change">
+      <li class="oneFlex"><span class="tab-active">新手攻略</span></li>
+      <li class="oneFlex"><span>名词解释</span></li>
+      <li class="oneFlex"><span>常见问题</span></li>
+    </ul>
+    <section>
+      <div class="newHandRegister" >
+        <img src="toobei_train/newHandRegister1.jpg">
+        <img src="toobei_train/newHandRegister2.jpg">
+        <img src="toobei_train/newHandRegister3.jpg">
+        <img src="toobei_train/newHandRegister4.jpg">
+        <img src="toobei_train/newHandRegister5.jpg">
+        <img src="toobei_train/newHandRegister6.jpg">
+        <img src="toobei_train/newHandRegister7.jpg">
+        <img src="toobei_train/newHandRegister8.jpg">
+        <img src="toobei_train/newHandRegister9.jpg">
+        <img src="toobei_train/newHandRegister10.jpg">
+        <img src="toobei_train/newHandRegister11.jpg">
+        <img src="toobei_train/newHandRegister12.jpg">
+
+      </div>
+      <!-- 名词解释 -->
+      <div class="series" style="display: none;">
+        <h2>账户直通</h2>
+        <p class="pb-28">账户直通是合作平台的一种标识，带有该标识的平台账户可以与T呗账户相互绑定。用户登录T呗后，可通过T呗直接进入该平台进行充值、投资、提现等操作，而不需要额外进行登录。</p>
+        <h2>提前赎回</h2>
+        <p class="pb-28">提前赎回是指购买的产品尚未到期（已过锁定期），但是用户想要提前拿回自己的本金和已有收益而进行的一种赎回操作。只有写明“xxx天后可赎回”的产品才能进行提前赎回，其中“xxx天”即为锁定期，未过锁定期无法进行提前赎回。</p>
+        <h2>提前转让</h2>
+        <p class="pb-28">提前转让是指购买的产品尚未到期（已过锁定期），但是投资人通过将持有的产品份额转让给其他投资人进而提前拿回自己的本金和已有收益的一种行为。只有写明“xxx天后可转让”的产品才能进行提前转让，其中“xxx天”即为锁定期，未过锁定期无法进行转让。</p>
+        <h2>还款方式</h2>
+        <p >还款方式是指投资人购买理财产品后借款人还给投资人本金与收益的方式。常见的还款方式及其含义如下所示：</p>
+        <ul class="pb-28">
+          <li><b>一次性还本付息：</b>借款人在规定的一个时间一次性还清所借款项所有本金和利息。</li>
+          <li><b>等额本息：</b>所谓等额本息就是将本金总额与利息总额相加得到借款人要还的总金额。然后将该总金额按照规定的还款期限平均到每月，也就是说还款人需要每月还固定的金额。特殊之处借款人每月还款金额中，其本金所占的比重逐月递增，而利息比重逐月递减。</li>
+          <li><b>等额本金：</b>等额本金与等额本息类似，不同的是等额本金只是将借款本金平均到每个月，利息也是需要付清上次还款日和此次还款日之间的利息。</li>
+          <li><b>按月付息到期还本：</b>还款人需要每月偿还利息给借款人，然后在达到借款期限时返还本金。</li>
+        </ul>
+        <h2>T呗奖励</h2>
+        <p class="pb-28">T呗奖励是一个专门用来给投资人发放活动奖励、投资返现红包账款等奖励的账户。发放的奖励暂时不能用于投资，只能提现。奖励到账后，投资人可随时申请提现。</p>
+      </div>
+        <div class="problem" style="display: none;">
+          <ul>
+            <li class="arrow">
+              <a href="ques_login.html">注册登录问题</a>
+            </li>
+
+            <li class="arrow">
+              <a href="ques_bind.html">银行卡绑定问题</a>
+            </li>
+
+            <li class="arrow">
+              <a href="ques_account.html">账户与投资问题</a>
+            </li>
+
+           <li class="arrow">
+              <a href="ques_redpacket.html">红包发放和使用问题</a>
+           </li>
+
+           <li class="arrow">
+              <a href="ques_withdraw.html">提现问题</a>
+           </li>
+
+            <li class="arrow">
+              <a href="ques_planner.html">理财师分配问题</a>
+            </li>
+
+           <li class="arrow">
+              <a href="ques_whyuse.html">为什么要通过T呗进行投资</a>
+           </li>
+            <li class="arrow">
+              <a href="ques_safe.html">托管账户问题</a>
+            </li>
+          </ul>
+          <div id="tel">客服电话 400-888-6987</div>
+        </div>
+    </section>
+
+  </div>
+  <script type="text/javascript">
+    require('toobei_train/train')
+  </script>
+</body>
+</html>

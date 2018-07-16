@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>平台</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+  <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+  <!-- @require static/css/public.css -->
+  <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+<!--   <nav>
+    <ul class="tab">
+      <li data-for="#safeLevel">
+        <span class="safeLevel"> 安全评级 </span>
+        <span class="arrow-down"></span>
+      </li>
+      <li data-for="#rateLavel">
+        <span class="rateLavel"> 年化收益 </span>
+        <span class="arrow-down"></span>
+      </li>
+      <li data-for="#productTerm">
+        <span class="productTerm"> 产品期限 </span>
+        <span class="arrow-down"></span>
+      </li>
+    </ul>
+
+    <div id="select-component">
+      <ul id="safeLevel" class="select">
+        <li class="selected" data-value="">全部</li>
+      </ul>
+
+      <ul id="rateLavel" class="select">
+        <li data-value="" class="selected">全部</li>
+      </ul>
+
+      <ul id="productTerm" class="select">
+        <li data-value="" class="selected">全部</li>
+      </ul>
+
+      <div class="mask"></div>
+    </div>        
+  </nav> -->
+  <header>
+    <div class="swiper-container">
+        <div id="headerBanner" class="swiper-wrapper">
+            <div class="swiper-slide"><a href="{{linkUrl}}"><img data-src={{imgUrl}}></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+  </header>
+  <main class="main">
+    <ul id="organizationList" class="orgList" style="display: none">
+      <li>
+        <a href="organization_info.html?orgNumber={{orgNumber}}&orgName={{name}}">
+          <div class="list-left">
+            <img data-src="{{platformIcon}}" class="org-logo">
+          </div>
+          <div class="list-right">
+            <h2>{{name}}&nbsp;<img class="{{isShowRedpacket}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAzCAMAAAA0GHFDAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAEjUExURQAAAP1TU/1TU/////1TU/1TU/1TU/1TU/1TU/1TU/1TU/1dXf1UVP/z8/1WVv61tf1XV//29v66uv/8/P/v7/6Skv/6+v/r6/1tbf/09P/m5v/l5f/+/v6vr/1eXv/k5P1nZ/10dP/f3/1VVf1hYf6Wlv6QkP60tP/w8P6Tk/1bW/1YWP/9/f7Ly/1cXP6qqv/39/1iYv11df/Z2f64uP7AwP/q6v/b2/6urv6Ojv7Jyf/y8v7IyP/a2v17e/7Kyv7Q0P6+vv1fX/1zc/6UlP/19f1mZv6trf1aWv6wsP6Hh/7Nzf6Pj/6pqf/i4v/p6f6MjP1ZWf6bm/6Fhf7Bwf7Gxv1vb//u7v6AgP13d/1lZf7ExP/j4/6YmP6zs/6IiP6JiSIxhNYAAAAKdFJOUwBMTv/z8vS+TYQtEz6FAAABU0lEQVRIx+WW527CMBSFTRkJJ04gbMKeZdO9W7r33rt9/6doEKqYwU5F1UqcP76yPln3Hq9LCBEFG5iyCRbSlBOccuqwBW6XbGVKdrkhEiJg0sqlGARC7JD5aBl2QgArp4Cf0Z68aoxN+T1ddHgbzy9GcCOJuNy1duQJeHwdxF4cA6lET96V9xKUYqSXDV6XcXXg7a/y4U0BvbkLtNHKyaUb9DQ42BMtVwbiy3OzPq+3sOjJZwHFf27sYOFop/NkhM6CDL8X5nMz04qSTRW3tNHszpjRm752rN5Gh9PrmWT6O46E4BpOr26gtNIKqzXca4xMAn7QmD5G6xQfKrvKJYrdgPoJWo/yeLJ2iAxFrcrpYHpfP34Jbr99wJ6J3TGY7KOlztsgjZY2l8lv0uNR5X+jJekPXh8Tf7HN7D8v6j1EmM2GWz2Euf6EkAnBwUYdQnPlL7NGPSNrPFvcAAAAAElFTkSuQmCC">{{orgInvestTag}}</h2>
+            <p class="{{orgAdvantageClass}} ellipsis">{{orgAdvantage}}</p>
+            <p>{{orgTag}}安全等级 : {{grade}} </p>
+            <p class="clearfix">
+              <span>可投标数:{{usableProductNums}}</span>
+              <span>产品期限：{{deadLineText}}</span>
+              <span>预期年化: {{minProfit}}~{{maxProfit}}%</span>
+            </p>
+          </div>
+        </a>
+        <div class="orgList-label-box clearfix {{orgActivitysClass}}">
+          <span class="orgList-label-index">
+            <img src="../../static/images/orgList-label.png" alt="活动">
+          </span>
+          <div class="announce-wrapper">
+            <p>
+              <span class="orgList-announce">{{orgActivityList}}</span>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="toolbar-top">
+    </div>
+  </main>
+
+  <script type="text/javascript">
+    require('list/list');
+  </script>
+</body>
+</html>

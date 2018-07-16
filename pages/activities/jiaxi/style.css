@@ -1,0 +1,106 @@
+body {
+    background: #fdd851;
+}
+
+.relative {
+    position: relative;
+}
+
+.process {
+    position: absolute;
+    bottom: .4rem;
+    width: 100%;
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+
+.process-box {
+    width: 79.5%;
+    height: .21rem;
+    margin: .13rem 0;
+    margin-left: .13rem;
+    top: 0;
+    position: absolute;
+}
+
+.process-color {
+    width: 0%;
+    height: 100%;
+    border-radius: .12rem;
+    background: linear-gradient(#fadf78, #ecc32b);
+}
+
+.process-complete-text {
+    position: absolute;
+    top: 0;
+    left: .3rem;
+    line-height: .2rem;
+    color: #684020;
+}
+
+.process-num-box {
+    width: 98%;
+    margin-left: -.23rem;
+    position: relative;
+}
+
+.process-num{
+    width: .6rem;
+    left: 0%;
+    position: absolute;
+}
+
+.process-text{
+    position: absolute;
+    top: .04rem;
+    line-height: .34rem;
+    padding-left: .1rem;
+    font-size: .14rem;
+    color: #fdd851;
+}
+
+.invite {
+    width: 100%;
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+
+.invite-text {
+    position: absolute;
+    top: 0;
+    left: 1.4rem;
+    line-height: .6rem;
+    font-size: .2rem;
+    color: #eaeaea;
+}
+
+.complete {
+    display: none;
+}
+
+.rule {
+    margin-top: .3rem;
+}
+
+.time-box {
+    position: absolute;
+    top: 2.27rem;
+    left: .72rem;
+    color: #fff;
+}
+
+#time {
+    display: inline;
+}
+
+#time .saleCountdown strong{
+    border:solid 1px #541671;
+    font-weight:normal;
+    color:#fff;
+    border-radius:.02rem;
+    padding:0 .03rem;
+    position: relative;
+    background: #631b84;
+    background-size: auto 100%;
+    margin:0 .05rem;
+}

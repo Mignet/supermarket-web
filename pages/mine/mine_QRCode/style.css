@@ -1,0 +1,158 @@
+.inviteCode{
+	text-align:center;
+	padding:.77rem 0 .24rem 0;
+}
+
+.inviteCodeText{
+	margin-top:.3rem;
+	color:#969696;
+}
+
+.inviteCodeText p{
+	font-size:.14rem;
+	color:#969696;
+}
+
+.QRCodeImg{
+	width:2.77rem;
+	height:2.77rem;
+	margin:auto;
+}
+
+.QRCodeImg img{
+	width:100%;
+	height:100%;
+}
+
+.QRAfterInfo{
+	margin-top:.3rem;
+	color:#969696;
+}
+
+.inviteTitle{
+	text-align: center;
+	font-size: .18rem;
+	margin:.29rem 0;
+}
+.sendInviteCode{
+	padding:0 .28rem;
+	margin-bottom: .5rem;
+}
+
+
+.sendInviteCode > a:first-child{
+   margin-bottom: .18rem;
+   background-color: #7e99ce;
+}
+
+.sendInviteCode > a:last-child{
+   background-color: #fff;
+   border:1px solid #7e99ce;
+   color:#7e99ce;
+}
+
+.qRCodeRecord{
+	height:.75rem;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+	margin-bottom: .15rem;
+}
+
+.qRCodeRecord > div{
+	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+	margin:.1rem 0;
+}
+
+.qRCodeRecord > div:first-child{
+    border-right: 1px solid #f1f1f1;    
+}
+
+.record_title{
+    padding-top: .05rem;
+	font-size: .13rem;
+	color:#969696;
+}
+
+.register_num{
+   font-size: .25rem;
+   color:#323232;
+}
+
+.investor_num{
+   font-size: .25rem;
+   color:#fd5353;
+}
+
+/*main{
+	background:#fff;
+}*/
+
+main li{
+	position: relative;
+	height:.55rem;
+	border-bottom: 1px solid #f1f1f1;
+	padding:.1rem .15rem;
+	background:#fff;
+}
+
+main li > p{
+	margin-bottom: .1rem;
+}
+
+.record_info{
+	font-size: .18rem;
+    position: relative;	
+}
+ 
+.record_info > span:first-child:after{
+   display: inline-block;
+   content:'';
+   height:.15rem;
+   border-right: 1px solid #f1f1f1;
+   padding-left: .15rem;
+}
+
+.record_info > span:last-child{
+   margin-left: .1rem;
+}
+
+.record_time{
+	color:#969696;
+}
+
+.is_investor{
+	position: absolute;
+	right:.15rem;
+	top:.2rem;
+	font-size: .18rem;
+	color:#fd5353;
+/*	color:#969696;*/
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left:0;
+	width:100%;
+	height:.58rem;
+	line-height: .58rem;
+	background-color: #7e99ce;
+	color:#f1f1f1;
+	font-size: .2rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

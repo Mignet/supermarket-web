@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>可用红包</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+    <article class="packetList">
+        <section>
+        <ul id="avaiPacketList" style="display: none">
+            <li class="red-packet-list not-use clearfix">
+                <img class="top-right {{isActive}}" src="usePacket/not-use-flag.png" alt="理财师派发"></img>
+                <div class="title">{{remark}}</div>
+                <div class="left">
+                    <img src="usePacket/use-redpack.png" alt="">
+                    <div class="red-packet-money">
+                        <p><span>￥</span>{{redpacketMoney}}</p>
+                        <p>{{name}}</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>首投限制：{{investLimetText}}</p>
+                    <p>适用平台：{{platform}}</p>
+                    <p>适用产品：<span class="rolling-box"><span class="rolling">{{produce}}</span></span></p>
+                    <p>过期时间：{{expireTime}}</p>
+                </div>
+            </li>
+        </ul>
+        </section>
+    </article>
+
+    <script type="text/javascript"> 
+          require('usePacket/usePacket');
+    </script>
+</body>
+</html>

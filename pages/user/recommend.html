@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册成功</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+	<style>
+       .top{
+            position: relative;
+       }
+
+      .bottom{
+            position: relative;
+       }
+
+       .top > img , .bottom > img{
+            width:100%;
+       }
+
+       .top .tip{
+       	  position: absolute;
+       	  top:1.2rem;
+              left:20%;
+       	  width:60%;
+		   font-size: .15rem;
+              line-height: 1.5em;
+       	  color:#fff;   
+       	  text-align: center;      
+       }
+
+       .register-QRCode{
+       	  position: absolute;
+       	  top:.05rem;
+       	  width:100%;
+       	  color:#fff;
+       	  text-align: center;
+       }
+
+       .register-QRCode img{
+       	  width:1.7rem;
+       }
+
+       .register-QRCode p{
+          font-size: .17rem;
+          margin:.1rem;
+       }       
+	</style>
+</head>
+<body style="background-color: #555252">
+	<div class="top">
+            <img src="/static/images/register_su_top.png" alt="">     
+		<div class="tip">
+			<span style="color:#fdf54c">528</span>元的投资红包已经发放到您的账户<span id="mobile"></span>
+		</div>
+      </div>
+
+	<div class="bottom">
+            <img src="/static/images/register_su_bottom.png" alt="">
+<!-- 		<div class="register-QRCode">
+			<img src="/static/images/register_su_QRCode.png" alt="">
+			<p></p>
+		</div> -->
+	</div>
+	<script>
+    var comm    = require("modules/common/common");
+	var service     = require('modules/common/service');
+	var userApi   = require('modules/api/userApi');
+		var mobile = comm.getCookie('__mobile__');
+		if(mobile){
+			var str = mobile.substr(0,3) + '****' + mobile.substr(6,5);
+			document.getElementById('mobile').innerText = str;
+		}
+
+	function postWechatCode() {
+		var query = comm.getQueryString();
+		if( query.code && !query.key ) {
+			var codeService = new service();
+			codeService.api = userApi.saveWeiXinOpenId;
+			codeService.isNeedToken = true;
+			codeService.data = {
+				code: query.code,
+				isPush: query.isPush
+			};
+			codeService.success = function(data){
+
+			}
+			codeService.send();
+		}
+	}
+	postWechatCode();
+
+	function pushHistory() {
+		var state = {
+			title: "title",
+			url: "#"
+		};
+		window.history.pushState(state, "title", "#");
+	}
+
+	setTimeout(function () {
+		window.addEventListener("popstate", function(e) {
+			comm.goUrl('index.html', true);
+		}, false);
+	}, 300);
+
+	pushHistory();
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>邀请记录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+	<div class="wraper">
+       <header class="qRCodeRecord">
+       	  <div>
+       	  	<p class="record_title">已注册（人）</p>
+       	  	<p class="register_num"></p>
+       	  </div>
+       	  <div>
+       	  	<p class="record_title">已投资（人）</p>
+       	  	<p class="investor_num"></p>
+       	  </div>
+       </header>
+       <main>
+       	   <ul id="invitationList" style="display: none">
+	       	   	<li>
+	       	   		<p class="record_info">
+	       	   			<span>{{customerName}}</span>
+	       	   			<span>{{customerMobile}}</span>
+	       	   		</p>
+	       	   		<p class="record_time">
+	       	   			<span>{{registerDate}} 注册</span>
+	       	   		</p>
+	       	   		<p class="is_investor">
+	       	   		   <span>{{investFlagText}}</span>
+	       	   		</p>
+	       	   	</li>
+       	   </ul>
+       </main>
+
+	   <div class="ios-fixed-hack"></div>
+       <footer id="footer">立即邀请</footer>
+	</div>
+
+	<script type="text/javascript">
+		require('mine_QRCode/mine_QRCodeRecord');
+	</script>
+</body>
+</html>

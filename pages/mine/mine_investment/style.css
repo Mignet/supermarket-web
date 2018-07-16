@@ -1,0 +1,206 @@
+header{
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+header .acc_income_wrapper{
+  margin-left: .23rem;
+  border-bottom: 1px dashed #dcdcdc;
+  height: .6rem;
+}
+.acc_income_wrapper p:first-child{
+  float: left;
+  height: 100%;
+  width: 70%;
+  line-height: .6rem;
+  font-size: .17rem;
+  color: #969696;
+}
+.acc_income_wrapper p:first-child span{
+  font-size: .18rem;
+  color: #646464;
+  line-height: .6rem;
+}
+.acc_income_wrapper p:last-child{
+  float: right;
+  height: 100%;
+  padding-right: .3rem;
+  line-height: .6rem;
+  text-align: right;
+}
+.acc_income_wrapper p:last-child a{
+  display: block;
+  font-size: .14rem;
+  color: #969696;
+}
+/************ income instruction *********************/
+.income_instruction ul{
+  margin-top: .13rem;
+}
+.income_instruction ul li{
+  font-size: .14rem;
+  color: #646464;
+  line-height: 2em;
+}
+.income_instruction ul li i{
+  display: inline-block;
+  width: .1rem;
+  height: .1rem;
+  margin-top: .02rem;
+  border-radius: 40%;
+  margin-right: .06rem;
+}
+/****************** tab **********************/
+.tab{
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+	background-color: #f6f6f7;
+	height:.52rem;
+	line-height:.52rem;
+	text-align: center;
+  border-bottom: 1px solid #f1f1f1;
+	border-top: 1px solid #f1f1f1;
+}
+
+.tab > div{
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+}
+
+.tab a{
+	display:inline-block;
+  font-size: .16rem;
+  color:#969696;
+  height:100%;
+  text-align: center;
+  /*width:70%;*/
+}
+
+.tab a.active{
+    color:#7e99ce;
+    border-bottom: 2px solid #7e99ce;
+}
+
+.content-box{
+   display: none;
+}
+
+.main li{
+  position: relative;
+  background-color: #fff;
+  margin-bottom:.15rem;
+}
+
+.main li a{
+  display:block;
+}
+
+.main .header{
+  position: relative;
+  padding:.1rem .15rem;
+  border-bottom:1px dashed #f1f1f1;
+  display:block;
+}
+
+.main .header > p:first-child{
+   font-size: .2rem;
+   float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 2.8rem;
+}
+
+.main .header > p:last-child{
+   float: right;
+   margin-top: .03rem;
+   font-size: .15rem;
+   color:#969696;
+   padding-right: .15rem;
+}
+
+.main .header p > span.buytime{
+  font-size: .13rem;
+  color: #969696;
+}
+
+.main .content{
+  position: relative;
+  height:.7rem;
+}
+
+.main .content > div{
+    position: absolute;
+    color:#969696;
+}
+
+.main .content > div > p:last-child{
+  color:#323232;
+    font-size: .2rem;
+    margin-top:.05rem;
+}
+
+
+.income{
+   color:#fd5353!important;
+}
+
+.main .content > div{
+    top:.1rem;
+}
+
+.main .content > div:nth-child(1){
+    left:.15rem;
+}
+
+.main .content > div:nth-child(2){
+    left:1.8rem;
+}
+
+.main .content > div:nth-child(3){
+    right:.25rem;
+}
+
+.oval-box{
+  border:1px solid #fd5353;
+  border-radius: .04rem;
+  color:#fd5353;
+  padding:.03rem .05rem;
+  font-size: .12rem
+}
+
+.main_bottom{
+   height:.4rem;
+   line-height: .4rem;
+   margin: 0 .15rem;
+   border-top: 1px solid #f1f1f1;
+}
+
+.main_bottom>p:first-child{
+   float: left;
+}
+
+.main_bottom>p:last-child{
+   float: right;
+}
+
+footer{
+	position: fixed;
+	left:0;
+	bottom:0;
+	text-align: center;
+	font-size: .11rem;
+	color:#969696;
+	z-index: 100;
+	background: #f1f1f1;
+	width:100%;
+	padding:.1rem 0;
+
+}
+.ios-fixed-hack{
+  height:.4rem;
+  width:100%;
+}
+

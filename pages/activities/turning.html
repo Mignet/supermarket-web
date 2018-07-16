@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>幸运大转盘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body class="articleBody">
+<div class="wraper">
+    <div>
+        <div class="relative"><img src="turning/1.jpg"></div>
+        <div class="relative"><img src="turning/2.jpg"></div>
+        <div class="relative img-list">
+            <img src="turning/3.jpg">
+            <img class="btn-my-price" src="turning/btn-my-price.png" alt="1">
+            <img class="start" src="turning/start.png" alt="1">
+            <img class="mask" src="turning/t-1.png" alt="1">
+            <img class="mask" src="turning/t-2.png" alt="1">
+            <img class="mask" src="turning/t-3.png" alt="1">
+            <img class="mask" src="turning/t-4.png" alt="1">
+            <img class="mask" src="turning/t-5.png" alt="1">
+            <img class="mask" src="turning/t-6.png" alt="1">
+            <img class="mask" src="turning/t-7.png" alt="1">
+        </div>
+        <div class="relative"><img src="turning/4.jpg"></div>
+        <div class="relative">
+            <img src="turning/5.jpg">
+            <div class="all-price">
+            </div>
+        </div>
+        <div class="relative"><img src="turning/6.jpg"></div>
+        <div class="relative"><img src="turning/7.jpg"></div>
+    </div>
+    <div class="pop-price">
+        <img src="turning/pop/div-2.png" alt="1">
+        <img class="cancel" src="turning/pop/cancel.png" alt="">
+        <div class="price-info price-1">
+            <p class="price-name">恭喜你获得8元现金</p>
+            <p class="price-time">已放入我的-T呗奖励余额</p>
+            <img class="price-img" src="turning/pop/1.png" alt="奖品">
+        </div>
+        <div class="price-info price-2">
+            <p class="price-name">恭喜你获得500M流量</p>
+            <p class="price-time">客服将于9:00-18:00上班时间内联系您</p>
+            <img class="price-img" src="turning/pop/2.png" alt="奖品">
+        </div>
+        <div class="price-info price-3">
+            <p class="price-name">恭喜你获得取暖器</p>
+            <p class="price-time">客服将于9:00-18:00上班时间内联系您</p>
+            <img class="price-img" src="turning/pop/3.png" alt="奖品">
+        </div>
+        <div class="price-info price-4">
+            <p class="price-name">恭喜你获得20元现金</p>
+            <p class="price-time">已放入我的-T呗奖励余额</p>
+            <img class="price-img" src="turning/pop/4.png" alt="奖品">
+        </div>
+        <div class="price-info price-5">
+            <p class="price-name">恭喜你获得烘干器</p>
+            <p class="price-time">客服将于9:00-18:00上班时间内联系您</p>
+            <img class="price-img" src="turning/pop/5.png" alt="奖品">
+        </div>
+        <div class="price-info price-8888">
+            <p class="price-name">恭喜你获得小米移动电源</p>
+            <p class="price-time">客服将于9:00-18:00上班时间内联系您</p>
+            <img class="price-img" src="turning/pop/8888.png" alt="奖品">
+        </div>
+        <p class="left-times">还剩余<span id="times">0</span>次抽奖机会</p>
+        <img id="btn-know" src="turning/pop/know.png" alt="按钮">
+    </div>
+    <div class="pop-times">
+        <img src="turning/pop/div-3.png" alt="1">
+        <img class="cancel-2" src="turning/pop/cancel.png" alt="">
+        <div class="pop-times-content">
+            <img src="turning/pop/cry.png" alt="">
+            <p class="pop-times-title">未达到抽奖条件</p>
+            <p class="pop-times-sub">东方汇、高搜易累积投资每满1万元可抽一次</p>
+            <img class="btn-invest" src="turning/pop/invest.png" alt="1">
+        </div>
+    </div>
+    <div class="pop-choose-times">
+        <img src="turning/pop/div-1.png" alt="1">
+        <img class="cancel-2" src="turning/pop/cancel.png" alt="">
+        <div class="choose-times-content">
+            <h1>你拥有<span id="choose-times-count"></span>次抽奖机会</h1>
+            <p>十连抽可以提高iPhone中奖概率</p>
+            <p>奖品只有一件</p>
+        </div>
+        <div class="choose-times-btn-list">
+            <img class="choose-one" src="turning/pop/one.png" alt="">
+            <img class="choose-ten" src="turning/pop/ten.png" alt="1">
+        </div>
+    </div>
+    <div class="pop-my-price">
+        <img src="turning/pop/my-price.png" alt="">
+        <img class="cancel-3" src="turning/pop/cancel.png" alt="">
+        <div class="title">
+            <div class="text-left">抽奖时间</div>
+            <div class="text-right">中奖结果</div>
+        </div>
+        <ul class="price-list">
+        </ul>
+    </div>
+    <div class="no-my-price">
+        <img src="turning/pop/div-3.png" alt="1">
+        <img class="cancel-2" src="turning/pop/cancel.png" alt="">
+        <div class="no-price-content">
+            <img class="cry" src="turning/pop/cry.png" alt="">
+            <p>您还没有抽奖，</p>
+            <p>点开始抽奖试试手气吧！</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require('turning/turning');
+</script>
+</body>
+</html>

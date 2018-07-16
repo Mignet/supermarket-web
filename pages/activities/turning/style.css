@@ -1,0 +1,275 @@
+
+.relative {
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    top: .36rem;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.start {
+    position: absolute;
+    width: 1.3rem;
+    top: 29%;
+    left: 50%;
+    margin-left: -.6rem;
+    z-index: 10;
+}
+
+.btn-my-price {
+    position: absolute;
+    width: 1.3rem;
+    bottom: .1rem;
+    right: .1rem;
+    z-index: 10;
+}
+
+/*中奖弹窗*/
+
+.pop-price {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    display: none;
+}
+
+.cancel {
+    position: absolute;
+    top: .8rem;
+    right: .25rem;
+    width: .4rem;
+}
+
+.price-info {
+    position: absolute;
+    top: 1.7rem;
+    color: #f102c0;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.price-name {
+    font-size: .25rem;
+    font-weight: bold;
+}
+
+.price-time {
+    font-size: .16rem;
+}
+
+.price-img {
+    margin-top: .2rem;
+    width: 1.5rem;
+    display: inline-block;
+}
+
+.price-1 .price-img {
+    width: 2.1rem;
+}
+
+.price-2 .price-img {
+    width: 1.2rem;
+}
+
+.price-4 .price-img {
+    width: 2.1rem;
+}
+
+.left-times {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 1rem;
+    font-size: .16rem;
+    color: #956fff;
+}
+
+#btn-know {
+    width: 1.4rem;
+    position: absolute;
+    bottom: .4rem;
+    left: 50%;
+    margin-left: -.7rem;
+}
+
+/*抽奖次数弹窗*/
+.pop-times {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    display: none;
+}
+
+.cancel-2 {
+    position: absolute;
+    top: -.4rem;
+    right: .05rem;
+    width: .4rem;
+}
+
+.pop-times-content {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-times-content img{
+    width: 1.5rem;
+    display: inline-block;
+}
+
+.pop-times-content .pop-times-title {
+    color: #f102c0;
+    font-size: .25rem;
+}
+
+.pop-times-content .pop-times-sub {
+    color: #f102c0;
+    font-size: .16rem;
+}
+
+/*十连抽*/
+.pop-choose-times {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    display: none;
+}
+
+.choose-times-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.choose-times-content h1{
+    font-size: .25rem;
+    font-weight: bold;
+    color: #f102c0;
+    margin-bottom: .3rem;
+}
+
+.choose-times-content p {
+    font-size: .18rem;
+    color: #956fff;
+}
+
+.choose-times-btn-list {
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+}
+
+.choose-times-btn-list img {
+    width: 40%;
+    margin-left: 7%;
+    display: inline-block;
+}
+
+/*中奖名单*/
+.all-price {
+    position: absolute;
+    width: 80%;
+    top: .9rem;
+    left: 10%;
+    color: #fff;
+    font-size: .15rem;
+    line-height: 180%;
+    max-height: 1.1rem;
+    overflow: hidden;
+}
+
+.btn-invest {
+    margin-top: .1rem;
+}
+
+/*我的奖品*/
+.pop-my-price {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    display: none;
+}
+
+.cancel-3 {
+    position: absolute;
+    top: 1.2rem;
+    right: .2rem;
+    width: .4rem;
+}
+
+.pop-my-price .title {
+    position: absolute;
+    top: 2.1rem;
+    left: .5rem;
+    width:2.8rem;
+    font-size: .19rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.pop-my-price .text-left {
+    width: 1.68rem;
+    display: inline-block;
+}
+.pop-my-price .text-right {
+    width: .9rem;
+    display: inline-block;
+}
+
+.price-list {
+    position: absolute;
+    top: 2.5rem;
+    left: .5rem;
+    width:2.7rem;
+    color: #fff;
+    max-height: 3.3rem;
+    overflow: scroll;
+}
+
+.price-list li {
+    line-height: .37rem;
+}
+
+.no-my-price {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    display: none;
+}
+
+.no-price-content {
+    position: absolute;
+    top: .8rem;
+    width: 100%;
+    text-align: center;
+}
+
+.no-price-content img {
+    width: 1.5rem;
+    display: inline-block;
+    margin-bottom: .1rem;
+}
+
+.no-price-content p {
+    color: #f102c0;
+    font-size: .25rem;
+    font-weight: bold;
+}

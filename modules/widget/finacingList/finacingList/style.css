@@ -1,0 +1,352 @@
+#productList li {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: .15rem;
+}
+
+#productList .title {
+    padding: 0 .15rem;
+    font-size: .17rem;
+    color: #646464;
+    border-bottom: 1px dashed #f1f1f1;
+}
+
+#productList .title>div:first-child {
+    float: left;
+    line-height: .4rem;
+    height: .4rem;
+}
+
+#productList .content {
+    position: relative;
+    height: .85rem;
+    display: block;
+}
+
+#productList .content > div{
+    position: absolute;
+}
+
+#productList .content > div > p:first-child{
+    font-size: .13rem;
+    color:#969696;
+}
+
+#productList .content > div > p:last-child{
+    font-size: .22rem;
+    color:#646464;
+    margin-top:.05rem;
+}
+
+#productList .content > div:nth-child(1){
+    top:.15rem;
+    left:.15rem;
+}
+
+#productList .content > div:nth-child(2){
+    top:.15rem;
+    left:1.8rem;
+}
+
+#productList .content > div:nth-child(3){
+    top:.15rem;
+    right:.15rem;
+}
+
+#productList .circle{
+    display: block;
+    width:.52rem;
+    height:.52rem;
+    line-height:.52rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #7e99ce;
+    border: solid 1px #fff;
+    box-shadow: 0 0 0 1px #7e99ce;
+    text-align: center;
+    color:#fff;
+    font-size: .14rem;
+}
+
+#productList .year-rate{
+    color:#fd5353!important;
+}
+
+#productList .year-rate > span{
+    font-size: .138rem;
+}
+
+#productList .progress-bar{
+    position: relative;
+    padding:0 .15rem .2rem .15rem;
+    display: none;
+}
+
+#productList .progress{
+    background-color: #dcdcdc;
+    height:4px;
+    width:86%;
+    border-radius: .1rem;
+    position: relative;
+}
+
+#productList .percent{
+    border-radius: .1rem;
+    height:100%;
+    background-color: #7e99ce;
+    width:35%;
+}
+
+#productList .progress-num{
+    position: absolute;
+    top:-.04rem;
+    right:.15rem;
+    color:#969696;
+    font-size: .1rem;
+}
+
+#productList .characterBox{
+    text-align: right;
+}
+
+#productList .character{
+    border: 1px solid #fd5353;
+    border-radius: .15rem;
+    color: #fd5353;
+    padding: .01rem .05rem;
+    font-size: .12rem;
+}
+#productList .tag{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: .54rem;
+    height: .21rem;
+    line-height: .25rem;
+    text-align: center;
+    font-size: .12rem; 
+    background-color: #fec047;
+    color: #fff;
+}
+#productList .tag:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.21rem;
+    left: 0;
+    border-top: .04rem solid #fec047;
+    border-left: .27rem solid #fff;
+    border-right: .27rem solid #fff;
+}
+#productList .circle-white {
+    background: #fff;
+    box-shadow: 0 0 0 1px #fd5353;
+    color: #fd5353;
+}
+
+#productList .circle-white span {
+    display: block;
+
+    line-height:.15rem;
+    font-size: .1rem;
+}
+
+#productList .circle-white span:first-child {
+    display: block!important;
+    margin-top: 0.1rem;
+}
+
+#productList .sub-title {
+    margin: 0 .15rem;
+    border-top: dashed 1px #ddd;
+}
+
+#productList .sub-title img {
+    height: .22rem;
+    padding-right: .1rem;
+}
+
+#productList .sub-title p {
+    line-height: 300%;
+    color: #969696;
+}
+
+
+#noRecommendProduct li {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: .15rem;
+}
+
+#noRecommendProduct .title {
+    padding: 0 .15rem;
+    font-size: .17rem;
+    color: #646464;
+    border-bottom: 1px dashed #f1f1f1;
+}
+
+#noRecommendProduct .title>div:first-child {
+    float: left;
+    line-height: .4rem;
+    height: .4rem;
+}
+
+#noRecommendProduct .content {
+    position: relative;
+    height: .85rem;
+    display: block;
+}
+
+#noRecommendProduct .content > div{
+    position: absolute;
+}
+
+#noRecommendProduct .content > div > p:first-child{
+    font-size: .13rem;
+    color:#969696;
+}
+
+#noRecommendProduct .content > div > p:last-child{
+    font-size: .22rem;
+    color:#646464;
+    margin-top:.05rem;
+}
+
+#noRecommendProduct .content > div:nth-child(1){
+    top:.15rem;
+    left:.15rem;
+}
+
+#noRecommendProduct .content > div:nth-child(2){
+    top:.15rem;
+    left:1.8rem;
+}
+
+#noRecommendProduct .content > div:nth-child(3){
+    top:.15rem;
+    right:.15rem;
+}
+
+#noRecommendProduct .circle{
+    display: block;
+    width:.52rem;
+    height:.52rem;
+    line-height:.52rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #7e99ce;
+    border: solid 1px #fff;
+    box-shadow: 0 0 0 1px #7e99ce;
+    text-align: center;
+    color:#fff;
+    font-size: .14rem;
+}
+
+#noRecommendProduct .year-rate{
+    color:#fd5353!important;
+}
+
+#noRecommendProduct .year-rate > span{
+    font-size: .138rem;
+}
+
+#noRecommendProduct .progress-bar{
+    position: relative;
+    padding:0 .15rem .2rem .15rem;
+    display: none;
+}
+
+#noRecommendProduct .progress{
+    background-color: #dcdcdc;
+    height:4px;
+    width:86%;
+    border-radius: .1rem;
+    position: relative;
+}
+
+#noRecommendProduct .percent{
+    border-radius: .1rem;
+    height:100%;
+    background-color: #7e99ce;
+    width:35%;
+}
+
+#noRecommendProduct .progress-num{
+    position: absolute;
+    top:-.04rem;
+    right:.15rem;
+    color:#969696;
+    font-size: .1rem;
+}
+
+#noRecommendProduct .characterBox{
+    text-align: right;
+}
+
+#noRecommendProduct .character{
+    border: 1px solid #fd5353;
+    border-radius: .15rem;
+    color: #fd5353;
+    padding: .01rem .05rem;
+    font-size: .12rem;
+}
+#noRecommendProduct .tag{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: .54rem;
+    height: .21rem;
+    line-height: .25rem;
+    text-align: center;
+    font-size: .12rem;
+    background-color: #fec047;
+    color: #fff;
+}
+#noRecommendProduct .tag:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.21rem;
+    left: 0;
+    border-top: .04rem solid #fec047;
+    border-left: .27rem solid #fff;
+    border-right: .27rem solid #fff;
+}
+#noRecommendProduct .circle-white {
+    background: #fff;
+    box-shadow: 0 0 0 1px #fd5353;
+    color: #fd5353;
+}
+
+#noRecommendProduct .circle-white span {
+    display: block;
+
+    line-height:.15rem;
+    font-size: .1rem;
+}
+
+#noRecommendProduct .circle-white span:first-child {
+    display: block!important;
+    margin-top: 0.1rem;
+}
+
+#noRecommendProduct .sub-title {
+    margin: 0 .15rem;
+    border-top: dashed 1px #ddd;
+}
+
+#noRecommendProduct .sub-title img {
+    height: .22rem;
+    padding-right: .1rem;
+}
+
+#noRecommendProduct .sub-title p {
+    line-height: 300%;
+    color: #969696;
+}
+
+
+
+
+
+

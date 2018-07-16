@@ -1,0 +1,9 @@
+#backHome {
+    position: fixed;
+    width: .48rem;
+    height: .48rem;
+    right: .2rem;
+    bottom: 1rem;
+    background: url("back-home.png");
+    background-size: cover;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>中国互联网金融协会会员单位平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body class="articleBody">
+<div class="wraper">
+    <div>
+        <img src="hujinhuiyuan/1_01.jpg">
+    </div>
+      <div>
+        <img src="hujinhuiyuan/1_02.jpg">
+    </div>
+    <div>
+        <img src="hujinhuiyuan/1_03.jpg">
+    </div>
+    <div>
+        <img src="hujinhuiyuan/1_04.jpg">
+    </div>
+    <div id="xinyongbao">
+        <img src="hujinhuiyuan/1_05.jpg">
+    </div>
+    <div>
+        <img src="hujinhuiyuan/1_06.jpg">
+    </div>
+    <div>
+        <img src="hujinhuiyuan/1_07.jpg">
+    </div>
+    <div id="dongfanghui">
+        <img src="hujinhuiyuan/1_08.jpg">
+    </div>
+</div>
+<script>
+    require('modules/widget/activityShare/activityShare');
+    var $ 	   = require("zepto");
+    var native = require('modules/common/native');
+    var evt = {
+        init:function(){
+            var self = this;
+            if(native.isApp){
+                native.getAppToken(function(data){
+                    self.token = data || '';
+                    self.bindEvent();
+                });
+            }else{
+                self.bindEvent();            
+            }
+        },
+        bindEvent:function(){
+            $(".wraper").on("click","#xinyongbao",function(){
+                if(native.isApp){
+                    native.action('getAppPlatfromDetail',{orgNo: "OPEN_XINYONGBAO_WEB"});
+                }else{
+                    location.href="./../download/actDownload.html?Action=OPEN_XINYONGBAO_WEB"
+                }
+            })
+
+            $(".wraper").on("click","#dongfanghui",function(){           
+                if(native.isApp){
+                    native.action('getAppPlatfromDetail',{orgNo: "OPEN_DONGFANGHUI_WEB"});
+                }else{
+                    location.href="./../download/actDownload.html?Action=OPEN_DONGFANGHUI_WEB"
+                }
+            })
+        }
+    }
+    evt.init();
+</script>
+</body>
+</html>

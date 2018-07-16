@@ -1,0 +1,49 @@
+.aboutWraper{
+	background:#fff;
+}
+.downloadLogo{
+	padding-top:.6rem;
+	text-align:center;
+}
+
+.downloadLogoImg{
+	width:1.03rem;
+	height:1.03rem;
+	margin:auto;
+}
+.mine_more{
+	border-top:solid 1px #f1f1f1;
+	border-bottom:solid 1px #f1f1f1;
+	background:#fff;
+	margin:.45rem 0 .3rem 0;
+	visibility: hidden;
+}
+.mine_more li{
+	line-height:.5rem;
+	margin-left:.14rem;
+	border-bottom:solid 1px #f1f1f1;
+}
+.mine_more li:last-child{
+	border-bottom:none;
+}
+.mine_more a{
+	display:block;
+	position:relative;
+	color:#000000;
+	font-size:.18rem;
+}
+.mine_more span{
+	color:#969696;
+	position:absolute;
+	right:.28rem;
+	top:0;
+	font-size:.14rem;
+}
+.quiet{
+	padding:.14rem;
+}
+.version{
+	color:#646464;
+	line-height: 2.5em;
+}
+

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<ul class="setting">
+			<li class="settingPhone">
+				<a href="#">
+					<span>头像</span>
+					<p><img src="../../static/images/mine_headportrait.png" id="myPhone" /></p>
+				</a>
+			</li>
+
+			<li>
+				<a>
+					<span>手机号码</span>
+					<p style="right:.1rem" id="mobile"></p>
+				</a>
+			</li>
+
+			<li class="setting_tip">
+				如需更换手机号，请联系客服400-888-6987
+			</li>
+
+			<li class="arrow">
+				<a id="bindCard">
+					<span>银行卡管理</span>
+					<p id="isBind"></p>
+				</a>
+			</li>
+
+			<li class="arrow" style="margin-top:.2rem">
+				<a href="changeLoginPwd.html">
+					<span>登录密码管理</span>
+				</a>
+			</li>
+
+			<li id="changePayPwd" class="arrow" style="display:none">
+				<a href="changePayPwd.html">
+					<span>修改交易密码</span>
+				</a>
+			</li>
+
+			<li id="setPayPwd" class="arrow" style="display:none">
+				<a href="setPayPwd.html">
+					<span>设置交易密码</span>
+				</a>
+			</li>
+
+			<li class="arrow settingQRCode" style="margin-top:.2rem">
+				<a href="../mine/mine_QRCode.html">
+					<span>我的二维码</span>
+					<p><img src="../../static/images/setting_QRCode.png" /></p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		require('setting/setting');
+	</script>
+</body>
+</html>

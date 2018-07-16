@@ -1,0 +1,34 @@
+.sixPwdWrap{
+    margin: .2rem;
+}
+
+.sixPwdWrap p{
+    margin-bottom: .1rem;
+}
+
+.sixPwd{
+    display: -webkit-box;
+    display: -webkit-flex; 
+    display: flex;
+    border:solid 1px #cdcccc;   
+}
+.sixPwd li{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1; 
+    flex: 1;
+    box-sizing:border-box;
+    border-right:solid 1px #cdcccc;
+    height:.6rem;
+    line-height:.6rem;
+    font-size:.18rem;
+    background:#fff;
+    text-align:center;
+}
+
+.sixPwd li:last-child{
+    border-right:none;
+}
+
+.passwordTip{
+    margin-top:.1rem;
+}

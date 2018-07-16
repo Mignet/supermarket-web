@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>产品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+
+<body>
+<main class="main" style="display: none">
+    <div class="product-feature product-detail">
+        <p class="{{gray}}">年化收益</p>
+        <span class="tagListInvest">{{tagListRightNewerText}}</span>
+        <p class="{{gray}}">{{yearRate}}<span>%</span></p>
+        <div class="progress-bar {{isHaveProgressClass}}">
+            <div class="progress">
+                <p class="percent {{gray}}" style="width:{{percentage}}"></p>
+            </div>
+            <div class="progress-num">已售{{percentage}}</div>
+        </div>
+        <p class="{{redemptionClass}} {{gray}}">{{redemptionText}}</p>
+    </div>
+
+    <div class="product-buy {{virtualProduct}}">
+        <div >
+            <p>产品期限</p>
+            <p><span>{{deadLineText}}</span></p>
+        </div>
+        <div class="{{virtualProduct}}">
+            <p>剩余额度（元）</p>
+            <p>{{residualAmount}}</p>
+        </div>
+        <div class="{{virtualProduct}}">
+            <p>购买人数</p>
+            <p>{{buyedTotalPeople}}人</p>
+        </div>
+    </div>
+    <p class="incomeEvaluate">{{incomeEvaluate}}</p>
+
+    <div class="enounce">
+        <a href="../activities/safeShield.html" class="lvdun clearfix">
+            <img src="../../static/images/lvdun.png" alt="律盾">
+            <p>律盾让投资更放心</p>
+        </a>
+        <a id="usePacket" class="use-packet clearfix {{showRedpacket}}">
+            <img class="redpacket-red {{showRedpacket}}" src="../../static/images/mine_redpacket.png" alt="红包">
+            <img class="redpacket-gray {{showRedpacket}}" src="../../static/images/mine_redpacket_gray.png" alt="红包">
+            <p><i>{{couldUseRedPacketCounts}}</i>红包可用</p>
+        </a>
+    </div>
+
+    <div class="product-info">
+        <ul>
+            <li class="clearfix {{virtualProductShow}}" style="display: none;">
+                <p>产品期限</p>
+                <p>{{deadLineText}}</p>
+            </li>
+            <li class="clearfix">
+                <p>产品总额</p>
+                <p>{{buyTotalMoney}}元</p>
+            </li>
+            <li class="clearfix">
+                <p>还款方式</p>
+                <p>{{repaymentWayText}}</p>
+            </li>
+            <li class="clearfix">
+                <p>起投金额</p>
+                <p>{{buyMinMoney}}元</p>
+            </li>
+            <li class="clearfix">
+                <p>购买递增金额</p>
+                <p>{{buyIncreaseMoney}}元</p>
+            </li>
+            <li class="clearfix {{firstBuyAmtClass}}" style="display: none;">
+                <p>限购金额</p>
+                <p>{{firstBuyAmt}}元</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="product_detail">
+        <h2 class="downup arrow-down">产品详情</h2>
+        <div class="intro-detail">{{productDesc}}</div>
+    </div>
+    
+    <!-- 平台信息 -->
+    <div class="product-org" style="display: none;">
+        <h2 class="downup arrow-down">平台信息</h2>
+        <ul>
+        </ul>
+    </div>
+    
+    <div class="product-flat">
+        <div class="flat-info" id="product-flat-detail">
+            <div class="flat-logo">
+                <img src="" id="flat-logo">
+            </div>
+            <div class="flat-title">
+                <h2 id="orgName" class="orgName"></h2>
+                <p id="orgAdvantage" class="ellipsis"></p>
+            </div>
+        </div>
+        <div class="flat-detail">
+            <ul>
+                <li>
+                    <span>安全评级：</span>
+                    <span id="orgLevel"></span>
+                </li>
+                <li>
+                    <span>平台背景：</span>
+                    <span id="orgBack"></span>
+                </li>
+                <li>
+                    <span>注册资本：</span>
+                    <span id="capital"></span>
+                </li>
+                <li>
+                    <span>资金托管：</span>
+                    <span id="trusteeship"></span>
+                </li>
+                <li>
+                    <span>上线时间：</span>
+                    <span id="upTime"></span>
+                </li>
+                <li>
+                    <span>所在城市：</span>
+                    <span id="city"></span>
+                </li>
+                <li>
+                    <span>ICP 备案：</span>
+                    <span id="icp"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="ios-fixed-hack"></div>
+
+    <footer id="footer" class="footer" data-status={{status}} data-orgNumber={{orgNumber}} data-productId={{productId}}>
+        <div class="footer-item strategy">
+            <img src="../../static/images/strategy-book.png" alt="">
+        </div>
+        <div class="footer-item text">
+            <span data-static="{{orgIsstaticproduct}}">{{buttonText}}</span>
+            <span class="checkInvest {{investShow}}">投资2天后可在“我的－投资记录－其他”中查看</span>
+            <i class="sub-text {{showSub}}">　看看该平台其他产品 ></i>
+        </div>
+        <a class="{{inlineBlock}}">看看该平台的其他产品&nbsp;&gt;</a>
+    </footer>
+</main>
+
+<script type="text/javascript">
+    require('product_detail/product_detail');
+</script>
+</body>
+</html>

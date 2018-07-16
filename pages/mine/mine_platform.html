@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的投资平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+<div class="wraper">
+    <div class="total-money">
+        <p class="total-text">在投资金（元）<span id="totalInvestQuestion" class="question"></span></p>
+        <p class="total-invest-value">0.00</p>
+        <a id="invest-detail" class="arrow" href="mine_investment.html">投资明细</a>
+    </div>
+    <main>
+        <div class="platform-title">已开通平台(<span id="bind-count">1</span>)</div>
+        <!-- 跳转金服模板 -->
+        <ul id="jinfu-tp" style="display: none">
+            <li class="organiztion jinfu-organiztion">
+                <div class="info clearfix">
+                    <div class="info-item info-item-left">
+                        <h1 class="jinfu-title">领会金服</h1>
+                    </div>
+                    <div class="info-item info-item-right arrow">
+                        <a id="jinfu-link" href="http://minvestor.xiaoniuapp.com/pages/mine/mine.html" target="_blank">
+                            <p>赎回、提现</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="bind-org" style="display: none">
+            <li class="organiztion">
+                <div class="info clearfix">
+                    <div class="info-item info-item-left">
+                        <h1>{{orgName}}</h1>
+                        <p class="ellipsis">账户名：{{orgAccount}}</p>
+                        <p>绑定时间：{{bindDate}}</p>
+                    </div>
+                    <div class="info-item info-item-right arrow" data-num="{{orgNumber}}" data-name="{{orgName}}" data-status="{{status}}" data-url="{{cooperationEndUrl}}">
+                        <p>投资、赎回、提现</p>                       
+                    </div>
+                </div>
+                <div class="money clearfix">
+                    <div class="money-item">
+                        <p>投资总额（元）</p>
+                        <h4>{{investAmount}}</h4>
+                    </div>
+                    <div class="money-item">
+                        <p>投资次数</p>
+                        <h4>{{investCount}}</h4>
+                    </div>
+                    <div class="money-item">
+                        <p>累计收益（元）</p>
+                        <h4>{{totalProfix}}</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="no-bind" style="display: none">暂无已开通账户的平台</div>
+        <div class="platform-title">未开通平台(<span id="unbind-count">--</span>)</div>
+        <div class="unbind-org">
+            <ul class="org-box">
+                <li>
+                    <span><a href="../organization/organization_info.html?orgNumber={{orgNumber}}">{{orgName}}</a></span>
+                    <span class="bind-button" data-number={{orgNumber}} data-static="{{orgIsstaticproduct}}" data-name={{orgName}}>开通</span>
+                </li>
+            </ul>
+            <div class="no-unbind" style="display: none"><span>恭喜您</span>已开通所有合作平台账户</div>
+        </div>
+    </main>
+</div>
+<script type="text/javascript">
+    require('mine_platform/platform');
+</script>
+</body>
+</html>

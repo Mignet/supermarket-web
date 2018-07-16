@@ -1,0 +1,22 @@
+.feedback{
+	padding:.14rem;
+	background:#fff;
+	color:#969696;
+}
+.feedback textarea{
+	display:block;
+	width:100%;
+	line-height:1.5em;
+	font-size:.14rem;
+	height:1.6rem;
+	color:#969696;
+	resize:none;
+}
+.quiet{
+	padding:.14rem;
+	box-sizing:border-box;
+}
+
+.feedback > p{
+  text-align: right;
+}

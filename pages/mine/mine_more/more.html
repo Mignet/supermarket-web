@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>更多</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<!-- <meta name="format-detection" content="telephone=no, email=no" /> -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+
+		<div class="downloadLogo">
+			<div class="downloadLogoImg" id="downloadLogoImg">
+				<img src="../../static/images/downLoadLogo.png" />
+			</div>
+			<h1>领会金服</h1>
+			<p>v1.0.1</p>
+		</div>
+		
+		<ul class="mine_more">
+			<li class="arrow">
+				<a href="../agreement/about.html">关于我们</a>
+			</li>
+			<li class="arrow">
+				<a href="feedback.html">意见反馈</a>
+			</li>
+			<li class="arrow">
+				<a href="../agreement/questions.html">常见问题</a>
+			</li>
+			<li class="arrow">
+				<a href="tel:400-888-6987">客服电话<span><!-- 400-888-6987 --></span></a>
+			</li>
+			<li id="wechat">
+				<a>官方微信<span>linghuijinfu</span></a>
+			</li>
+		</ul>
+
+		<!-- 不用flash，除IE，其他不支持剪贴板操作 -->
+
+<!-- 打开拨号页面要做下处理，在网址后面增加一个锚节点mp.weixin.qq.com。 -->
+<!-- http://www.cnblogs.com/skylaugh/p/3401825.html -->
+	</div>
+
+	<div class="quiet">
+		<a class="button" id="quiet">退出登录</a>
+	</div>
+
+	<script type="text/javascript">
+		require('more/more');
+	</script>
+	
+</body>
+</html>

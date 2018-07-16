@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>重置交易密码</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<p class="padding2 lineHeight2_5" id="formTitle">已发送短信验证码到您的手机</p>
+		<ul class="inputList commonForm" id="getCodeForm">
+			<li class="hadPhoneCode">
+				<label for="inputCode">验证码</label>
+				<div class="inputWraper">
+					<input name="vcode" type="text" id="inputCode"  placeholder="请输入收到的验证码" />
+				</div>
+				<span class="phoneCode" id="phoneCode">获取验证码</span>
+			</li>
+		</ul>
+		<div class="padding">
+			<a id="findPasswordSub" class="button subButton">完成</a>
+		</div>
+	</div>
+
+	<script type="text/javascript"> 
+		require('resetPayPwd2/resetPayPwd2');
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>呼朋唤友，助力加息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+    <div class="title relative">
+        <div class="time-box">
+            加息倒计时:<div id="time"></div>
+        </div>
+        <img src="jiaxi/1.jpg" alt="">
+        <div class="process">
+            <img src="jiaxi/process.png" alt="">
+            <div class="process-box">
+                <div class="process-color"></div>
+                <p class="process-complete-text complete">已完成助力加息，活动期间投资可享2%加息</p>
+                <div class="process-num-box">
+                    <div class="process-num">
+                        <img src="jiaxi/process-num.png" alt="">
+                        <p class="process-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invite relative">
+        <img id="invite" class="no-complete" src="jiaxi/invite.png" alt="">
+        <img class="complete" src="jiaxi/help-grey.png" alt="">
+        <p class="invite-text complete" >已完成助力加息</p>
+    </div>
+    <div class="rule relative">
+        <img src="jiaxi/invite-rule.png" alt="">
+    </div>
+<script>
+    require('jiaxi/jiaxi');
+</script>
+</body>
+</html>

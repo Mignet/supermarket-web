@@ -1,0 +1,94 @@
+.product-list {
+    background-color: #feeef1;
+}
+.product-list li {
+    position:  relative;
+    width: 100%;
+}
+.title {
+    position: absolute;
+    top: .8rem;
+    width: 100%;
+    text-align: center;
+    color: #321807;
+    font-size: .2rem;
+    font-weight: bold;
+}
+
+.year-rate {
+    position: absolute;
+    top: 1.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.year-rate h4 {
+    font-size: .14rem;
+    color: #321807;
+}
+
+.year-rate p {
+    padding-top: .1rem;
+    font-size: .6rem;
+    color: #ff2a48;
+}
+
+.year-rate p span {
+    font-size: .2rem;
+}
+
+.item {
+    position: absolute;
+    top: 2.8rem;
+    width: .8rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.item h4 {
+    font-size: .14rem;
+}
+
+.item p {
+    padding-top: .2rem;
+    font-size: .3rem;
+}
+
+.deadline {
+    left: 1rem;
+}
+
+.money {
+    left: 2.3rem;
+}
+
+.btn-buy {
+    position: absolute;
+    top: 4rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-buy  img{
+    width: 2.2rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.bottom {
+    background-color: #feeef1;
+    text-align: center;
+    line-height: 150%;
+    padding-bottom: .1rem;
+}
+
+.bottom1 {
+    color: #f3475f;
+    font-size: .14rem;
+}
+
+.bottom2 {
+    color: #321807;
+    font-size: .16rem;
+}

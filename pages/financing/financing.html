@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+<nav>
+    <ul class="tab">
+        <li data-value="1" class="selected">
+            <span class="safeLevel">默认排序</span>
+            <span class="default" style="display: none"></span>
+        </li>
+        <li data-value="2">
+            <span class="rateLavel">年化收益</span>
+            <span class="default"></span>
+        </li>
+        <li data-value="3">
+            <span class="productTerm">产品期限</span>
+            <span class="default"></span>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <div class="financing-product">
+        <ul id="productList" style="display: none">
+        </ul>
+    </div>
+
+    <div class="toolbar-top">
+    </div>
+</main>
+
+<script type="text/javascript">
+    require('financing/financing');
+</script>
+</body>
+</html>

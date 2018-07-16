@@ -1,0 +1,59 @@
+
+.marginTop016{
+  margin-top:.16rem;
+}
+
+.lineHeight3{
+	 height: .44rem;
+	 line-height: .44rem;
+}
+
+.login2Form{
+	color:#000;
+}
+.agree{
+	margin-top: .34rem;
+	text-align:center;
+}
+.agree a{
+	color:#007aff;
+}
+.imgCode{
+	width:5em;
+	height:100%;
+	overflow:hidden;
+}
+.imgCode img{
+	height:100%;
+}
+.setNewPwd{
+	color:#969696;
+	text-align:center;
+	margin-top:.14rem
+}
+
+.eyes{
+	position:absolute;
+	height:100%;
+	width:.4rem;
+	background-image: url(close_eyes_icon.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:.22rem auto;
+	right:0;
+	top:0;
+}
+.openEyes{
+	background-image: url(eyes_icon.png);
+}
+.lineHeight3 a{
+    color:#007aff;
+}
+
+.commonForm li{
+	margin-left:.14rem;
+}
+
+.inputList li label{
+	left:0;
+}

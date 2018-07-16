@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>产品</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+    <header>
+    <a href="/pages/activities/safeShield.html" title="">
+        <img src="../../static/images/lvdunPlan.png" alt="">
+    </a>
+    </header>
+    <div class="product_recommend flex" style="display: none;">
+        <div class="newTarget oneFlex">
+            <a href="../financing/target.html?cateId=2" class="financingTitle">
+                <div class="product_recommend_content">
+                    <p class="targetName">新手专区</p>
+                    <p class="year_rate">10.00~15.00<span>%</span></p>
+                    <p class="cateDeclare ellipsis clearfix"><span>新人专享高收益</span></p>
+                </div>
+            </a>
+        </div>
+        <div class="planner_remommend oneFlex">
+            <a href="../mine/mine_planner.html" class="planner_remommend_main financingTitle">
+                <div class="product_recommend_content">
+                    <p class="targetName">理财师所有推荐</p>
+                    <p class="year_rate">7.00~12.00<span>%</span></p>
+                    <p class="cateDeclare ellipsis">理财就应该找专业的人</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <section>
+        <ul class="target_lists" id="target_lists" style="display: none">
+            <li class="target_list {{newTargetClass}} arrow">
+                <span class="vetically"></span>
+                <div class="target_left">
+                    <img src="../../static/images/icon-short.png" data-src="{{cateLogoInvestor}}">
+                </div>
+                <div class="target_right">
+                    <span class="vetically"></span>
+                    <a href="financing.html?cateId={{cateId}}" title="" class="financingTitle">
+                        <p>{{cateName}}<span>{{cateDeclare}}</span></p>
+                        <p>{{flowMinRateStatistics}}~{{flowMaxRateStatistics}}<span>%</span></p>
+                        <span class="target-count">{{count}}个</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        require('manageMoney/manageMoney');
+    </script>
+</body>
+</html>

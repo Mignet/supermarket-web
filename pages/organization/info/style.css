@@ -1,0 +1,473 @@
+.header{
+  position: relative;
+  font-size: 0.15rem;
+  background: #fff;
+  color: #323232;
+  margin-bottom: 0.15rem;
+  width: 100%;
+}
+
+.header img{
+  width:100%;
+}
+.org-logo{
+  height: 1.94rem;
+  overflow: hidden;
+}
+.header > span{
+  position:absolute;
+  background-color:#fd5353;
+  color:#fff;
+  z-index: 99;
+  top:.15rem;
+  right:.15rem;
+  border-radius: .02rem;
+  padding:.02rem .05rem;
+}
+.orgAdvantage{
+  padding-top: 0.24rem;
+  text-align: center;
+  font-size: 0.13rem;
+  color:#969696;
+  display: none;
+}
+.orgTagText{
+  padding-top: 0.1rem;
+  padding-bottom: 0.24rem;
+  text-align: center;
+  font-size: 0;
+}
+.orgTagText span{
+  padding-right: 0.24rem;
+  color:#fd5353;
+  font-size: 0.14rem;
+}
+.orgTagText span:last-child{
+  padding-right: 0;
+}
+.orgTagText span i{
+  margin-right: 0.03rem;
+  display: inline-block;
+  width: 0.11rem;
+  height: 0.11rem;
+  background: url('/static/images/hook.png') no-repeat center center;
+  background-size: 0.1rem auto;
+}
+
+/*tab切换*/
+.tabSwitch{
+  margin-bottom: 0.02rem;
+  height: 0.42rem;
+  overflow: hidden;
+  width: 100%;
+}
+.tabSwitch li{
+  background: #fff;
+  color: #646464;
+  text-align: center;
+  height: 0.42rem;
+  line-height: 0.4rem;
+  font-size: 0;
+}
+.tabSwitch span{
+  border-bottom: 0.02rem solid #fff;
+  display: inline-block;
+  line-height: 0.4rem;
+  font-size: 0.16rem;
+}
+.tabSwitch li span.active{
+  color: #fd5353;
+  border-bottom: 0.05rem solid #fd5353;
+}
+/*tab内容*/
+.tabContent{
+  padding-bottom: 0.1rem; 
+  background: #fff;
+  margin-bottom: 0.15rem;
+}
+.tabContent > div{
+  padding: 0 0.13rem;
+}
+.tabContent .short-height{
+  overflow: hidden;
+  height: 1.56rem;
+}
+.tabContent .minHeight{
+  min-height: 1.56rem;
+}
+/*平台动态 start*/
+.org-dynamic ul li{
+  width: 100%;
+  height: 0.39rem;
+  line-height: 0.39rem;
+  font-size: 0.14rem;
+  border-bottom: 1px dashed #dcdcdc;
+}
+.org-dynamic ul li a{
+  color: #646464;
+  display: block;
+}
+.create-time{
+  float: right;
+  padding-right: 8%;
+}
+/*平台动态 end*/
+
+/*平台实力 start*/
+.tabContent h2{
+  padding-top: 0.12rem;
+  padding-bottom: 0.08rem;
+  font-size: 0.16rem;
+  color: #646464;
+}
+.tabContent p,.tabContent pre{
+  line-height: 0.24rem;
+  text-align: justify;
+  color: #969696;
+  font-size: 0.14rem;
+}
+.org-img{
+  font-size: 0;
+  padding-top: 0.1rem;
+}
+.org-img p{
+  display: inline-block;
+
+
+}
+.org-img.more p {
+  width: 1.23rem;
+  height: 0.69rem;
+  margin-bottom: .1rem;
+}
+
+.org-img.more .center-img {
+  margin: 0 2%;
+}
+
+.org-img p img{
+  width: 100%;
+  height: 100%;
+}
+/*基本信息*/
+.org-base-info{
+  width: 100%;
+  overflow: hidden;
+}
+.org-base-info li{
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #969696;
+  font-size: .13rem;
+}
+
+/*平台实力 end*/
+.clamp4{
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-align: left;
+}
+.positionFixed{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.tabContent .arrowDown{
+  background: url("../../../static/images/arrow-down.png") no-repeat center center;
+  background-size: 0.22rem auto;
+  height: 0.13rem;
+
+}
+.ellipsis{
+  max-width: 2.8rem;
+}
+.no-data{
+  text-align:center;
+  line-height: 1.35rem;
+}
+.main .orgActivity{
+  display: none;
+  margin-bottom: 0.15rem;
+  height: 0.72rem;
+}
+.orgActivity a{
+  display: block;
+}
+.orgActivity img{
+  width: 100%;
+}
+.arrowStatus{
+  margin-top: 0.15rem;
+}
+.tabContent .arrowUp{
+  background: url("../../../static/images/arrow-up.png") no-repeat center center;
+  background-size: 0.22rem auto;
+  height: 0.13rem;
+}
+
+
+/*团队介绍*/
+.managerIntro .height{
+  height: 1.06rem;
+  overflow: hidden;
+}
+.personal-box{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.personal-box:last-child{
+  margin-bottom: 0;
+}
+.personal{
+  float: left;
+  margin-right: 0.13rem;
+}
+.personal img{
+  width: 0.76rem;
+}
+.textBox{
+  float: left;
+  width: 75%;
+}
+.textBox>div span:first-child{
+  font-size: 0.19rem;
+  color: #323232;
+}
+.textBox>div span:last-child{
+  font-size: 0.15rem;
+  color: #969696;
+}
+.personal-detail{
+  display: block;
+  resize:none;
+  color: #969696;
+  font-size: .13rem;
+  word-wrap: break-word;
+  width: 100%;
+  padding-top: 0.15rem;
+  line-height:0.22rem;
+}
+
+#orgSecurity{
+  font-size: 0.14rem;
+  color: #969696;
+  line-height: 0.24rem;
+}
+.organization-product{
+   position: relative;
+}
+
+.organization-product h1{
+   background-color: #fff;
+   line-height: .4rem;
+   height:.4rem;
+   font-size: .15rem;
+   padding:0 .15rem;
+   border-bottom: 1px solid #f1f1f1;
+}
+
+.organization-product li{
+  position: relative;
+  background-color: #fff;
+  margin-bottom:.15rem;
+}
+
+.organization-product .title{
+  padding:0 .15rem;
+  font-size: .17rem;
+  color:#646464;
+  border-bottom:1px dashed #f1f1f1;
+}
+
+.organization-product .title > div:first-child{
+  float: left;
+  line-height: .4rem;
+  height: .4rem;
+}
+
+.organization-product .content{
+  position: relative;
+  height:.85rem;
+  display: block;
+}
+
+.content > div{
+    position: absolute;
+}
+
+.content > div > p:first-child{
+    font-size: .13rem;
+    color:#969696;
+}
+
+.content > div > p:last-child{
+    font-size: .19rem;
+    color:#646464;
+    margin-top:.05rem;
+}
+
+.content > div:nth-child(1){
+    top:.15rem;
+    left:.15rem;
+}
+
+.content > div:nth-child(2){
+    top:.2rem;
+    left:1.8rem;
+}
+
+.content > div:nth-child(3){
+    top:.2rem;
+    right:.15rem;
+}
+
+.circle{
+   display: block;
+   width:.52rem;
+   height:.52rem;
+   line-height:.52rem;
+   border-radius: 50%;
+   box-sizing: border-box;
+   background: #fd5353;
+   border: solid 1px #fff;
+   box-shadow: 0 0 0 1px #fd5353;
+   text-align: center;
+   color:#fff;
+   font-size: .14rem;
+}
+
+.year-rate{
+   color:#fd5353!important;
+}
+
+.year-rate > span{
+  font-size: .13rem;
+}
+
+.progress-bar{
+  position: relative;
+  padding : 0 .15rem .2rem .15rem;
+  display : none;
+}
+
+.progress{
+  background-color: #dcdcdc;
+  height:4px;
+  width:86%;
+  border-radius: .1rem;
+  position: relative;
+}
+
+.percent{
+  border-radius: .1rem;
+  height:100%;
+  background-color: #fd5353;
+  width:0;
+}
+
+.progress-num{
+  position: absolute;
+  top:-.04rem;
+  right:.15rem;
+  color:#969696;
+  font-size: .1rem;
+}
+
+.footer > a{
+  position: fixed;
+  bottom:0;
+  left:0;
+  height:.57rem;
+  line-height: .57rem;
+  background: #fd5353;
+  color:#fff;
+  font-size: .2rem;
+  width:100%;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.character{
+  border: 1px solid #fd5353;
+  border-radius: .04rem;
+  color: #fd5353;
+  padding: .03rem .05rem;
+  font-size: .12rem;
+  display: none;
+  margin-right: 0.05rem;
+}
+
+/*投资攻略*/
+.investStrategy{
+  background: #7e99ce;
+  text-align: center;
+  line-height: 0.58rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  color: #fff;
+  font-size: 0.22rem;
+}
+pre{
+  white-space: pre-wrap;       
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;      
+  white-space: -o-pre-wrap;    
+  word-wrap: break-word;
+  font-family:'Microsoft YaHei',Arial;
+  margin: 0;
+}
+.tagListInvest{
+  position: absolute;
+  display: block;
+  width: 0.54rem;
+  background: #fd5353;
+  line-height: 0.2rem;
+  color: #fff;
+  text-align: center;
+  right: 0.06rem;
+  top: 0;
+  font-size: 0.14rem;
+  display: none;
+}
+.tagListInvest:after{
+  content: "";
+  display: block;
+  border-top: 0.05rem solid #fd5353;
+  border-left: 0.27rem solid #fff;
+  border-right: 0.27rem solid #fff;
+}
+.organization-product{
+  padding-bottom: 0.8rem;
+}
+
+/*图片放大弹窗*/
+.img-large-layer{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.img-large-layer img{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}

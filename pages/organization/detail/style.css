@@ -1,0 +1,93 @@
+main{
+  margin-bottom: .58rem;
+}
+
+.organ-intro{
+  background-color: #fff;
+  font-size:.13rem;
+  text-align: left;
+  margin-bottom: .15rem;
+}
+
+.organ-intro h1{
+  font-size: .15rem;
+  color:#323232;
+  line-height: .4rem;
+  height:.4rem;
+  padding:0 .15rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.textBox{
+  padding:.1rem .15rem;
+}
+
+.organ-detail{
+  display: block;
+  resize:none;
+  color: #969696;
+  font-size: .13rem;
+  word-wrap: break-word;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.8em;
+  font-family: 'Microsoft YaHei',Arial;
+}
+
+.personal{
+   margin:.2rem .15rem;
+}
+
+.personal > div{
+  float:left;
+  margin-right:.1rem;
+}
+
+.personal > div:last-child p{
+  color:#323232;
+  margin-top: .01rem;
+}
+
+#name{
+  font-size: .23rem;
+}
+
+#job{
+  font-size: .18rem;
+}
+
+.personal img{
+  width:.6rem;
+  height:.6rem;
+  border-radius: 50%;
+}
+
+.personal-detail{
+  display: block;
+  resize:none;
+  color: #969696;
+  font-size: .13rem;
+  word-wrap: break-word;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.8em;
+  font-family: 'Microsoft YaHei',Arial;
+}
+
+.personal-detail:last-child{
+  border-bottom: none;
+}
+
+
+.footer > a{
+  position: fixed;
+  bottom:0;
+  left:0;
+  height:.57rem;
+  line-height: .57rem;
+  background: #fd5353;
+  color:#fff;
+  font-size: .2rem;
+  width:100%;
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的理财师</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<div class="header clearfix">
+        <div>
+          <img id="portrait" src="../../static/images/icon_head_portrait.png">
+        </div>
+
+        <div>
+          <p class="userName"></p>
+          <p class="level"></p>
+        </div>
+
+        <div>
+          <a class="mobile"></a>
+        </div>
+		</div>
+        
+        <div class="product">
+            <nav class="tab">
+                <div><a data-id="produce" class="active">推荐产品</a></div>
+                <div><a data-id="platform">推荐平台</a></div>
+            </nav>
+
+            <ul id="productList" class="list" style="display: none">
+            </ul>
+            <ul id="organizationList" class="list" style="display: none">
+                    <li>
+                        <a href="/pages/organization/organization_info.html?orgNumber={{orgNumber}}">
+                            <div class="list-left">
+                                <img data-src="{{platformIcon}}" class="org-logo">
+                            </div>
+                            <div class="list-right">
+                                <h2>{{orgName}}&nbsp;<img class="{{isShowRedpacket}}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAzCAMAAAA0GHFDAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAEjUExURQAAAP1TU/1TU/////1TU/1TU/1TU/1TU/1TU/1TU/1TU/1dXf1UVP/z8/1WVv61tf1XV//29v66uv/8/P/v7/6Skv/6+v/r6/1tbf/09P/m5v/l5f/+/v6vr/1eXv/k5P1nZ/10dP/f3/1VVf1hYf6Wlv6QkP60tP/w8P6Tk/1bW/1YWP/9/f7Ly/1cXP6qqv/39/1iYv11df/Z2f64uP7AwP/q6v/b2/6urv6Ojv7Jyf/y8v7IyP/a2v17e/7Kyv7Q0P6+vv1fX/1zc/6UlP/19f1mZv6trf1aWv6wsP6Hh/7Nzf6Pj/6pqf/i4v/p6f6MjP1ZWf6bm/6Fhf7Bwf7Gxv1vb//u7v6AgP13d/1lZf7ExP/j4/6YmP6zs/6IiP6JiSIxhNYAAAAKdFJOUwBMTv/z8vS+TYQtEz6FAAABU0lEQVRIx+WW527CMBSFTRkJJ04gbMKeZdO9W7r33rt9/6doEKqYwU5F1UqcP76yPln3Hq9LCBEFG5iyCRbSlBOccuqwBW6XbGVKdrkhEiJg0sqlGARC7JD5aBl2QgArp4Cf0Z68aoxN+T1ddHgbzy9GcCOJuNy1duQJeHwdxF4cA6lET96V9xKUYqSXDV6XcXXg7a/y4U0BvbkLtNHKyaUb9DQ42BMtVwbiy3OzPq+3sOjJZwHFf27sYOFop/NkhM6CDL8X5nMz04qSTRW3tNHszpjRm752rN5Gh9PrmWT6O46E4BpOr26gtNIKqzXca4xMAn7QmD5G6xQfKrvKJYrdgPoJWo/yeLJ2iAxFrcrpYHpfP34Jbr99wJ6J3TGY7KOlztsgjZY2l8lv0uNR5X+jJekPXh8Tf7HN7D8v6j1EmM2GWz2Euf6EkAnBwUYdQnPlL7NGPSNrPFvcAAAAAElFTkSuQmCC">{{orgProductTag}}</h2>
+                                <p class="{{orgAdvantageClass}}">{{orgAdvantage}}</p>
+                                <p>{{orgTag}}安全等级 : {{grade}} </p>
+                                <p class="clearfix">
+                                    <span>可投标数:{{usableProductNums}}</span>
+                                    <span>产品期限：{{deadLineText}}</span>
+                                    <span>预期年化: {{minProfit}}~{{maxProfit}}%</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+            </ul>
+            <div id="no-data" class="list">
+                <div class="no-data-content">
+                    <img src="../../static/images/no-data.png" alt="无平台">
+                    <p>暂无推荐平台</p>
+                </div>
+                <div class="recommendPlatform">
+                    <h4>T呗优质平台推荐</h4>
+                    <div class="organization swiper-container">
+                        <div id="organizationContent" class="swiper-wrapper">
+                            <div class="org swiper-slide">
+                                <p>
+                                    <a href="/pages/organization/organization_info.html?orgNumber={{orgNumber}}">
+                                        <img data-src="{{orgLogo}}">
+                                    </a>
+                                </p>
+                                <p>{{orgName}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img id="home-ico-8" src="/static/images/home-8.png" alt=" " style="display: none;">
+            <div id="noRecommendProduct" style="display: none;">
+                <div id="noRecoProdBlank" class="no-data-content">
+                    <img src="/static/images/no-data.png" alt="无产品">
+                    <p>暂无推荐产品</p>
+                </div>
+                <div class="top clearfix">
+                    <img src="{{imgSrc}}" alt="图标">
+                    <span>{{cateName}}</span>
+                    <span><a class="linkSkip" href="{{linkUrl}}" data-name="{{titleName}}">&nbsp;</a></span>
+                </div>
+            </div>
+        </div>		
+	</div>
+
+  <div class="toolbar-top">
+  </div>
+
+	<script type="text/javascript">
+		require('mine_planner/mine_planner');
+	</script>
+</body>
+</html>

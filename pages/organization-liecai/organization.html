@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="tab">
+            <li data-for="#safeLevel">
+                <span class="safeLevel"> 安全评级 </span>
+                <span class="arrow-down"></span>
+            </li>
+            <li data-for="#rateLavel">
+                <span class="rateLavel"> 年化收益 </span>
+                <span class="arrow-down"></span>
+            </li>
+            <li data-for="#productTerm">
+                <span class="productTerm"> 产品期限 </span>
+                <span class="arrow-down"></span>
+            </li>
+        </ul>
+
+        <div id="select-component">
+          <ul id="safeLevel" class="select">
+            <li class="selected" data-value="">全部</li>
+          </ul>
+
+          <ul id="rateLavel" class="select">
+            <li data-value="" class="selected">全部</li>
+          </ul>
+
+          <ul id="productTerm" class="select">
+            <li data-value="" class="selected">全部</li>
+          </ul>
+
+          <div class="mask"></div>
+        </div>        
+    </nav>
+
+
+    <main class="main">
+        <ul id="organizationList" style="display: none">
+          <li>
+              <a href="organization_info.html?orgNumber={{orgNumber}}">
+              <div class="list-left">
+                <img data-src="{{platformIcon}}" class="org-logo">
+              </div>
+              <div class="list-right">
+                <h2>{{name}}{{orgProductTag}}</h2>
+                <p class="{{orgAdvantageClass}} ellipsis">{{orgAdvantage}}</p>
+                <p>{{orgTag}}安全等级 : {{grade}} </p>
+                <p class="clearfix">
+                  <span>可投标数:{{usableProductNums}}</span>
+                  <span>产品期限：{{deadLineText}}</span>
+                  <span>预期年化: {{minProfit}}~{{maxProfit}}%</span>
+                </p>
+              </div>
+              </a>
+          </li>
+        </ul>
+        <div class="toolbar-top">
+        </div>
+    </main>
+    
+    <script type="text/javascript">
+        require('list/list');
+    </script>
+</body>
+</html>

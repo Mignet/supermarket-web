@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>修改交易密码</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+	
+		<div class="sixPwdWrap">
+			<p id="setPwdInfo">修改密码前需要验证原密码，请输入</p>
+			<ul id="sixPwd" class="sixPwd">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<p class="overHidden changePayForget"><a href="resetPayPwd.html" class="floatRight">忘记密码？</a></p>
+			<div class="padding subButton">
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		require('changePayPwd/changePayPwd');
+	</script>
+</body>
+</html>

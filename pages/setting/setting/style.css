@@ -1,0 +1,44 @@
+
+.setting li{
+	border-bottom:solid 1px #f1f1f1;
+	padding:0 .14rem;
+	font-size:.18rem;
+	background-color:#fff;
+}
+
+.setting li a{
+	display:block;
+	overflow:hidden;
+	line-height:.58rem;
+	position:relative;
+}
+.setting li span{
+	color:#000;
+}
+.setting li p{
+	color:#969696;
+	position:absolute;
+	right:.2rem;
+	top:0;
+	font-size: .13rem;
+}
+.setting li.settingPhone a{
+	padding:.1rem 0;
+}
+
+.setting li.settingPhone p{
+	right:0;
+	width:.5rem;
+	top:.08rem;
+}
+.settingQRCode p{
+	width:.2rem;
+}
+
+.setting_tip{
+	height:.52rem;
+	line-height: .32rem;
+	background-color:#f1f1f1!important;
+	font-size: .13rem!important;
+	color:#969696;
+}

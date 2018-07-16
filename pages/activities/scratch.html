@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>惊喜BIG BANG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="scratch/scratch_01.png" alt="">
+			</div>
+
+			<div class="swiper-slide">
+				<ul id="marquee-view" class="marquee-view">
+					<li class="clearfix">
+						<div class="marquee-col">投资人185****2171</div>
+						<div class="marquee-col">刮中 <span class="money-color">588.00元</span></div>
+						<div class="marquee-col">9月1日 14:25:00</div>
+					</li>
+					<li class="clearfix">
+						<div class="marquee-col">投资人185****2171</div>
+						<div class="marquee-col">刮中 <span class="money-color">588.00元</span></div>
+						<div class="marquee-col">9月1日 14:25:00</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="swiper-slide reletive scratch-dark">
+				<!-- 未登录 -->
+				<div class="scratch-box no-login">
+					<p class="scratch-text login-text">您尚未登录，请先登录</p>
+					<img class="login-img" src="scratch/login.png">
+				</div>
+				<!-- 未投资 -->
+				<div class="scratch-box no-invest">
+					<p class="scratch-text invest-text-title">亲~您还没有刮刮卡哦</p>
+					<p class="scratch-text invest-text-sub">赶紧按照下方指引去获取刮刮卡吧</p>
+					<img class="invest-img" src="scratch/invest.png">
+				</div>
+				<!-- 投资两次用完 -->
+				<div class="scratch-box two-invest">
+					<p class="scratch-text invest-text-title">亲的刮刮卡已用完</p>
+					<p class="scratch-text invest-text-sub">投资可获得刮刮卡</p>
+					<img class="invest-img" src="scratch/invest.png">
+				</div>
+				<!-- 已刮完 -->
+				<div class="scratch-box no-chance">
+					<p class="scratch-text scratch-complete-text">唔~刮刮卡已用完！</p>
+					<p class="scratch-text scratch-complete-text">记得关注更多活动哦</p>
+				</div>
+				<img src="scratch/scratch_03.png" alt="">
+			</div>
+
+			<div class="swiper-slide reletive scratch-light">
+				<!-- 刮奖 -->
+				<div class="scratch-box">
+					<p class="scratch-text">您拥有3次刮奖机会</p>
+					<div id="scratch-pad">
+						<div class="scratch-back-text blod">
+							588元现金奖励
+						</div>
+					</div>
+				</div>
+				<img src="scratch/scratch_03_light.png" alt="">
+			</div>
+
+			<div class="swiper-slide">
+				<img src="scratch/scratch_04.png" alt="">
+			</div>
+
+			<div class="swiper-slide">
+				<img src="scratch/scratch_05.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="pop-window">
+		<div class="black-back"></div>
+		<div class="pop-content">
+			<div class="pop-pocket">
+				<p class="pocket-money">15元</p>
+				<img src="scratch/pop.png">
+			</div>
+			<div class="pop-text">
+				<p>恭喜你刮中<span class="pop-text-red">15元</span>现金奖励，奖金已经</p>
+				<p>放入您的T呗账户，可随时提现</p>
+				
+			</div>
+			<div class="pop-know">
+				<img src="scratch/know.png">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		require('scratch/scratch');
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*****************chart part***************/
+.chart_wrapper{
+  height: 1.06rem;
+}
+.chart_wrapper .chart_content{
+  position: relative;
+  float: left;
+  width: .8rem;
+  height: .8rem;
+  margin: .13rem .18rem;
+}
+.mask-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.chart_wrapper .income_instruction{
+  float: left;
+  padding-left: .03rem;
+}

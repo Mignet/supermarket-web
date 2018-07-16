@@ -1,0 +1,222 @@
+/*
+勿删备用
+nav{
+   position: relative;
+}
+.tab{
+   position: fixed;
+   width:100%;
+   top:0;
+   z-index: 2;
+   display:flex;
+   display:-webkit-box;
+   display:-webkit-flex;
+   background: #fff;
+   border-bottom: 1px solid #f1f1f1;
+}
+
+.tab > li{
+  flex:1;
+  -webkit-flex:1;
+  -webkit-box-flex:1;
+  text-align: center;
+  border-right: 1px solid #f1f1f1;
+  margin:.12rem 0;
+  font-size: .16rem;
+  color:#323232;
+}
+
+.tab > li:last-child{
+  border-right: none;
+}
+
+.arrow-down{
+   position: absolute;
+   top:.22rem;
+   margin-left:.05rem;
+   width:0;
+   height:0;
+   border-width:.05rem;
+   border-style:solid;
+   border-color:#323232 #ffffff #ffffff #ffffff;
+}
+
+.arrow-up{
+   position: absolute;
+   top:.17rem;
+   margin-left:.05rem;
+   width:0;
+   height:0;
+   border-width:.05rem;
+   border-style:solid;
+   border-color:#ffffff #ffffff #323232 #ffffff;
+}
+
+.select-component{
+  position: fixed;
+  margin-top:.45rem;  
+}
+
+.mask{
+  position: fixed;
+  width:100%;
+  height:100%;
+  background:#000;
+  z-index: 99;
+  opacity: .6;
+  display: none;
+}
+
+.select{
+  position: fixed;
+  width:100%;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 100;
+  display: none;
+}
+
+.select li{
+  position: relative;
+  height:.45rem;
+  line-height: .45rem;
+  border-top: 1px solid #f1f1f1;
+  padding:0 .15rem;
+  font-size: .16rem;
+
+}
+
+.select li.selected{
+  background:url(../../../static/images/icon_selected.png) 96% center no-repeat;
+  background-size:.15rem .17rem;
+  color:#fd5353;
+}
+*/
+header{
+  margin-bottom: 0.15rem;
+
+}
+header .swiper-pagination{
+  text-align: right;
+  padding-right: 20px;
+}
+header .swiper-pagination-bullet{
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+}
+header .swiper-wrapper{
+  width: 100%;
+  height: 1.61rem;
+}
+header .swiper-slide a{
+  display: block;
+}
+header .swiper-slide img{
+  width: 100%;
+}
+header .swiper-container-horizontal>.swiper-pagination-bullets{
+  left: auto;
+  right: 10px;
+}
+.main li{
+  position: relative;
+  background-color: #fff;
+  margin-bottom:.15rem;
+  overflow: hidden;
+  padding-top: 0.14rem;
+  background: url('../../../static/images/arrow.png') no-repeat  #fff 95% center ;
+  background-size:0.1rem auto;
+}
+.orgList li >a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.list-left{
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+  text-align: center;
+
+}
+.org-logo{
+  width: 0.52rem;
+}
+.list-right{
+  box-sizing: border-box;
+  width: 80%;
+  float: left;
+}
+.list-right h2{
+  font-size: 0.18rem;
+  color: #323232;
+  padding-bottom: 0.05rem;
+}
+.list-right h2 span:first-child{
+  margin-left: 0.05rem;
+} 
+.list-right p:nth-of-type(1){
+  font-size: 0.14rem;
+  color: #323232;
+  padding-bottom: 0.05rem;
+}
+.list-right p:nth-of-type(2){
+  padding-bottom: 0.05rem;
+  color: #646464;
+}
+.list-right p:nth-of-type(3)>span{
+  float: left;
+  padding-bottom: 0.05rem;
+}
+.list-right p:nth-of-type(3) span{
+  color: #969696;
+}
+.list-right p:nth-of-type(3) span:first-child{
+  width: 1.24rem;
+}
+.orgList-label-box > span{
+  position:relative;
+  float: left;
+  box-sizing:border-box;
+  height: 0.35rem;
+  width:20.3%;
+  border-top: 1px solid #fff;
+}
+.orgList-label-box > span img{
+  position:absolute;
+  left: 0.34rem;
+  top:0.1rem;
+  display: block;
+  height: 0.14rem;
+}
+.announce-wrapper{
+  float: left;
+  padding-top: 0.1rem;
+  height: 0.35rem;
+  border-top: 1px dashed #dcdcdc;
+  width:79.7%;
+  box-sizing:border-box;
+}
+.orgList-label-box p{
+  height: 0.16rem;
+  overflow: hidden;
+  width: 3.29rem;
+}
+.orgList-label-box p span{
+  display: block;
+}
+a.orgList-label-text{
+  display: block;
+  height: 0.16rem;
+  line-height: 0.16rem;
+  font-size: 0.14rem;
+  color: #128df5;
+  text-decoration:underline;
+}
+.list-right h2 img{
+  height: .2rem;
+  padding:0 .05rem;
+  margin-top: -.04rem;
+} 
+

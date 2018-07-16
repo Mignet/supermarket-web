@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>成功绑定银行卡</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+	
+		<div class="bindSucc" id="bindSucc">
+			<div class="succImg">
+				<img src="../../static/images/icon_check_big.png" />
+			</div>
+			<h1>您已成功绑定银行卡</h1>
+		</div>
+
+
+		<ul class="inputList commonForm marginTop014" id="myCardInfo" style="display:none;">
+			<li class="showCard">
+				<label>银行卡号</label>
+				<div class="inputWraper">
+					{{bankCard}}
+				</div>
+			</li>
+			<li>
+				<label>银行</label>
+				<div class="inputWraper">
+					{{bankName}}
+				</div>
+			</li>
+			<li class="showCard">
+				<label>姓名</label>
+				<div class="inputWraper">
+					{{userName}}
+				</div>
+			</li>
+			<li class="showCard">
+				<label>身份证号</label>
+				<div class="inputWraper">
+					{{idCard}}
+				</div>
+			</li>
+		</ul>	
+
+
+		<div class="padding2 subButton">
+			<a href="../setting/setPayPwd.html" class="button" id="setPayPwdBtn" style="display: none">设置交易密码</a>
+		</div>
+
+		<div class="reminder">
+			<h2>温馨提示</h2>
+			<p>为保障资金安全，每位用户仅可添加一张银行卡，资金进出将都通过该银行卡进行，绑定成功后不支持修改。如需更换，请联系客服<a href="tel:400-888-6987">400-888-6987</a></p>
+		</div>
+
+	</div>
+	<script type="text/javascript"> 
+		require('bindSuccess/bindSuccess');
+	</script>
+</body>
+</html>

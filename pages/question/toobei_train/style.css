@@ -1,0 +1,77 @@
+.tab-change{
+  height: 0.44rem;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.tab-change li{
+  line-height: 0.42rem;
+  text-align: center;
+}
+.tab-change li span{
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 0.16rem;
+  color: #969696;
+  border-bottom: 0.05rem solid #fff;
+}
+.tab-change li span.tab-active{
+  border-bottom: 0.05rem solid #fd5353;
+  font-size: 0.18rem;
+  color: #323232;
+}
+section{
+  margin-top: 0.44rem;
+}
+.newHandRegister{
+  background: #fff;
+}
+.series{
+  padding: 0.13rem;
+  background: #fff;
+}
+.series h2{
+  font-size: 0.16rem;
+  padding-bottom: 0.08rem;
+}
+.series p{
+  line-height: 0.24rem;
+  color: #969696;
+}
+.series ul li{
+  line-height: 0.24rem;
+  color: #969696;
+}
+.series ul li:before{
+  display:inline-block;
+  width: 0.3rem;
+  height: 0.24rem;
+  content: "";
+}
+.pb-28{
+  padding-bottom: 0.28rem;
+}
+.problem ul li{
+  height:.55rem;
+  line-height: .55rem;
+      border-bottom: 1px solid #efefef;
+      padding-left: .15rem;
+      font-size: .18rem;
+      background-color: #fff;       
+}
+.problem ul li a{
+  display:block;
+}
+
+#tel {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  color: #969696;
+}

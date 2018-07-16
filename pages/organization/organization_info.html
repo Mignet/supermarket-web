@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header" style="display: none;">
+            <div class="org-logo"><img id="organizationLogo"></div>
+            <span id="organizationLevel" style="display: none;"></span>
+            <div>
+                <p class="orgAdvantage"></p>
+                <p class="orgTagText"><span class="orgLevel"><i></i></span></p>
+            </div>
+        </header>
+        <!-- 新增 -->
+        <section style="display: none;">
+            <ul class="flex tabSwitch">
+                <li class="oneFlex "><span class="active">平台动态</span></li>
+                <li class="oneFlex"><span>平台实力</span></li>
+                <li class="oneFlex"><span>安全保障</span></li>
+            </ul>
+            <div id="tabContent" class="tabContent">
+                <!-- 平台动态 -->
+                <div class="org-dynamic">
+                    <ul class="minHeight"></ul>
+                    <p class="arrowStatus"></p>
+                </div>
+                <!-- 平台实力 -->
+                <div class="org-strength-box" style="display: none;">
+                    <div class="org-strength minHeight">
+                        <div>
+                            <h2>平台简介</h2>
+                            <p>{{orgProfile}}</p>
+                        </div>
+                        <div class="org-img" id="orgEnvironmentList"></div>
+                        <div>
+                            <h2>基本信息</h2>
+                            <ul class="org-base-info clearfix">
+                                <li>年化收益：{{feeRateMin}}-{{feeRateMax}}%</li>
+                                <li>所在城市：{{city}}</li>
+                                <li>产品期限：{{deadLineText}}</li>
+                                <li>平台背景：{{orgBack}}</li>
+                                <li>注册资本：{{capital}}</li>
+                                <li>资金托管：{{trusteeship}}</li>
+                                <li>上线时间：{{upTime}}</li>
+                                <li>ICP备案：{{icp}}</li>
+                            </ul>
+                        </div>
+                        <div class="org-img" id="orgPapersList"></div>
+                        <div>
+                            <h2>管理团队</h2>
+                            <div id="teamIntro">
+                                <div class="personal-box">
+                                    <div class="personal clearfix">
+                                        <img src="../../static/images/icon_ceo.png" data-src="{{orgIcon}}">
+                                    </div>
+                                    <div class="textBox">
+                                        <div>
+                                            <span id="name">{{orgMemberName}}</span>
+                                            <span id="job">{{orgMemberGrade}}</span>
+                                        </div>
+                                        <div class="personal-detail">{{orgDescribe}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>荣誉</h2>
+                                <p id="orgHonor" class="orgHonor"></p>
+                            </div>
+                            <div class="org-img" id="orgHonorList"></div>
+                        </div>
+                    </div>
+                    <p class="arrowStatus"></p>
+                </div>
+                <div class="org-insurance-box" style="display: none;">
+                    <pre id="org-insurance" class="org-insurance minHeight"></pre>
+                    <p class="arrowStatus"></p>
+                </div>
+        </section>
+        <!-- 机构活动宣传 -->
+        <div class="orgActivity swiper-container">
+            <div class="swiper-wrapper" id="orgActivity">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="organization-product">
+            <h1>在售产品</h1>
+            <ul id="productList" style="display: none;">
+            </ul>
+        </div>
+        <div class="investStrategy" style="display: none;">查看投资攻略</div>
+        <a class="toolbar-index" href="https://www.toobei.com/app/index.html"></a>
+        <div class="toolbar-top"></div>
+        <!-- 图片放大弹窗 -->
+        <div id="img-large-layer" class="img-large-layer">
+            <img src="../../static/images/banner3.png">
+        </div>
+    </main>
+    <div id="img-tmp" style="display: none">
+        <img src="/static/images/org-default.png" alt="图片">
+    </div>
+    <script type="text/javascript">
+    require('info/info');
+    </script>
+</body>
+
+</html>

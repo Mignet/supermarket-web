@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>提现</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<div class="myAccount">
+			<span class="vetically"></span>
+			<div class="lastMoney">
+				<p>可提金额(元)</p>
+				<h1 id="accountBalance">{{totalAmount}}</h1>
+			</div>
+			<a class="withdraw-history-btn" href="withdrawHistory.html">提现记录</a>
+		</div>
+
+ 		<!--<a class="arrow tixianHis" href="withdrawHistory.html">提现记录</a>-->
+
+		<ul id="bankInfo" class="inputList commonForm marginTop014">
+			<li class="showCard" id="aaaa">
+				<label>银行卡号</label>
+				<div id="bankCardInfo" class="inputWraper">
+
+				</div>
+			</li>
+
+			<li id="openBankBox" class="hidden">
+				<label>开户银行</label>
+				<div class="inputWraper">
+					<select id="openBankName" class="select" name="" style="width:100%;">
+						<option value="">选择开户银行</option>
+					</select>
+				</div>
+			</li>
+
+			<li id="openAddress" class="hidden">
+				<label>所属支行</label>
+				<div class="inputWraper">
+					<select id="province" class="select" name="">
+						<option value="">选择省份</option>
+					</select>
+				</div>
+			</li>
+
+			<li id="openAddress2" class="hidden">
+				<div class="inputWraper">
+					<select id="city" class="select" name="" >
+						<option value="">选择城市</option>
+					</select>
+				</div>
+			</li>
+
+			<li id="openAddressInfo" class="hidden">
+				<div class="inputWraper">
+				<input required name="inputMoney" id="bankDetailAddress"  type="text" placeholder="请填写支行名称">
+				</div>
+			</li>
+		</ul>
+
+
+		<ul class="inputList commonForm marginTop014" id="myCardInfo">
+			<li>
+				<label>提现金额</label>
+				<div class="inputWraper">
+					<input required name="inputMoney" id="inputMoney"  type="text" placeholder="请输入金额">
+				</div>
+			</li>
+			<li class="showCard">
+				<label>到账时间</label>
+				<div class="inputWraper">
+					<p id="getTime">{{paymentDate}}</p>
+				</div>
+			</li>
+			<li class="showCard">
+				<label>提现费用</label>
+				<div class="inputWraper">
+					{{userOutFee}}
+				</div>
+			</li>
+		</ul>
+		<div class="kindly-reminder">
+			温馨提示：目前仅支持绑定银行卡，不支持信用卡
+		</div>
+
+
+		<div class="padding button-bottom">
+			<a id="withdrawSub" class="button">提交</a>
+		</div>
+
+  	<div class="reminder">
+			<h2>温馨提示</h2>
+			<p>为保障资金安全，平台仅支持绑定认证用户的一张银行卡用于资金进出，如需更换银行卡提现，请在个人中心-银行卡绑定中操作。客服电话<a href="tel:400-888-6987">400-888-6987</a></p>
+		</div>
+	</div>
+
+
+	<div class="showInputWDPwd" id="showInputWDPwd">
+		<div class="inputWDPwdInfo">
+			<h2>请输入交易密码</h2>
+			<h1 id="moneyNum"></h1>
+			<div class="inputWDContent">
+				<div class="realInput">
+					<input type="tel"  id="inputWDPwdNum" />
+				</div>
+				<ul class="inputWDPwd" id="inputWDPwd" >
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+
+			<div class="closeInputPwd" id="closeInputPwd">×</div>
+
+			<div style="margin-bottom: 0.2rem;color:#007aff;">
+				<a href="../setting/changePayPwd.html" style="color:#007aff">忘记交易密码？</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		require('withdraw/withdraw');
+	</script>
+</body>
+</html>

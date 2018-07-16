@@ -1,0 +1,101 @@
+body{
+    background: #ffffff;
+}
+.red-packet-list {
+    height: 1.74rem;
+    margin: .15rem .13rem 0 .14rem;
+    position: relative;
+    z-index: -2;
+}
+
+.red-packet-list.not-use {
+    background: url("not-use.png") no-repeat;
+    background-size: cover;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: .84rem;
+    display: none;
+}
+
+.top-right.active {
+    display: block;
+}
+
+.title {
+    line-height: .42rem;
+    padding-left: .14rem;
+    color: #646464;
+}
+
+.left {
+    float: left;
+    width: 1.08rem;
+    position: relative;
+}
+
+.left img {
+    width: .92rem;
+    margin: .2rem .08rem 0 .08rem;
+}
+
+.red-packet-money {
+    position: absolute;
+    top: .4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.red-packet-money p {
+    line-height: .32rem;
+}
+.red-packet-money p:first-child {
+    font-size: .24rem;
+    color: #ea3333;
+}
+.red-packet-money p:last-child {
+    font-size: .12rem;
+    color: #f9eed2;
+}
+.red-packet-money p span {
+    font-size: .16rem;
+}
+
+.used .red-packet-money p{
+    color: #969696;
+}
+
+.right {
+    float: left;
+    padding-top: .03rem;
+    width: 2.79rem;
+    z-index: -2;
+}
+.right p {
+    padding-top: .06rem;
+    padding-left: .15rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rolling-box {
+    position: relative;
+    top: 0.02rem;
+    display: inline-block;
+    height: .17rem;
+    width: 1.8rem;
+    overflow: hidden;
+}
+.rolling {
+    position: relative;
+    left: 0;
+}
+.right img {
+    width: 1.1rem;
+    position: absolute;
+    right: .14rem;
+    top: .5rem;
+    z-index: -1;
+}

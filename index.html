@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>T呗</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--<meta name="apple-mobile-web-app-capable" content="yes" />&lt;!&ndash; 删除苹果默认的工具栏和菜单栏 &ndash;&gt;-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+    <main class="wraper">
+       <div class="banner swiper-container">
+            <div id="bannerContent" class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href={{linkUrl}}><img data-src={{imgUrl}}></a>
+                </div>
+            </div>
+            <div class="swiper-pagination banner-pagination"></div>
+       </div>
+
+        <nav class="flex">
+            <a class="oneFlex" href="pages/understand/understand.html" title="了解我们">
+                <span>了解我们</span>
+            </a>
+            <a class="oneFlex" href="pages/newerStrategy/newerStrategy.html" title="新手攻略">
+                <span>新手攻略</span>
+            </a>
+            <a class="oneFlex" href="pages/mine/mine_QRCode.html" title="邀请朋友">
+                <span>邀请朋友</span>
+            </a>
+        </nav>
+
+        <img id="home-ico-2" src="/static/images/home-2.png" alt=" " style="display: none;">
+        <img id="home-ico-3" src="/static/images/home-3.png" alt=" " style="display: none;">
+        <img id="home-ico-4" src="/static/images/home-4.png" alt=" " style="display: none;">
+        <img id="home-ico-5" src="/static/images/home-5.png" alt=" " style="display: none;">
+        <img id="home-ico-8" src="/static/images/home-8.png" alt=" " style="display: none;">
+
+        <script id="produce-head" type="text/html">
+            <div class="header clearfix">
+                <img src="{{imgSrc}}" alt="图标">
+                <span>{{cateName}}</span>
+                <span><a href="{{linkUrl}}" data-name="{{titleName}}">&nbsp;</a></span>
+            </div>
+        </script>
+
+       <div class="product-info">
+          <div class="product-detail">
+            <ul id="productList" style="display: none"></ul>
+          </div>          
+       </div>
+      <div class="toolbar-top"></div>
+      <!-- 红包 -->
+      <!--<div id="newRedPacket" class="newRedPacket transition"><a class="mine_redPacket"></a></div>-->
+        <div id="success-pop" style="display: none">
+            <div class="pop-back"></div>
+            <img class="back" src="/static/images/redpack-pop-back.png" alt="">
+            <img class="btn" src="/static/images/redpack-pop-btn.png" alt="">
+            <img class="close" src="/static/images/redpack-pop-close.png" alt="">
+        </div>
+    </main>
+    <script type="text/javascript">     
+        require('pages/home/home/home');
+    </script>
+</body>
+</html>

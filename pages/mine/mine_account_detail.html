@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>奖励明细</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+<main>
+    <div class="header">
+        <div>
+            共<span class="font-color">0</span>笔记录
+        </div>
+        <div>
+            <span id="selectedText">全部</span>
+            <span id="arrow" class="arrow-up"></span>
+        </div>
+    </div>
+
+    <div class="select">
+        <ul>
+            <li class="selected" data-value="1">全部</li>
+
+            <li data-value="3">活动奖励</li>
+            <li data-value="2">提现</li>
+            <li data-value="4">红包</li>
+            <li data-value="5">其他</li>
+        </ul>
+        <div class="mask"></div>
+    </div>
+
+    <div class="detialList">
+        <ul id="detialListBox">
+            <li>
+                <div>
+                    <h1>{{typeName}}</h1>
+                    <p>{{transDate}}</p>
+                    <span class="{{transAmountClass}}">
+                             <span>{{transAmount}}</span><br>
+                             <span></span>
+                         </span>
+                </div>
+                <div>{{remark}}</div>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<script type="text/javascript">
+    require('mine_account/mine_account_detail');
+</script>
+</body>
+</html>

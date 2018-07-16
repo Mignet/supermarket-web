@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>正在T呗投资，需要你助力加息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+
+</head>
+<body>
+<div class="title relative">
+    <div class="time-box">
+        加息倒计时:<div id="time"></div>
+    </div>
+    <img src="jiaxi/1.jpg" alt="">
+    <div class="share-info">
+        <p>亲！你的好友<span class="nickname"></span>正通过T呗进行投资理财，现邀请你助力加息，赚取更多收益！</p>
+    </div>
+</div>
+<div class="help">
+    <div class="help-btn relative">
+        <img id="help" class="no-help" src="jiaxi/help.png" alt="">
+        <img class="in-help com-help" src="jiaxi/help-grey.png" alt="">
+        <p class="in-help help-text">您已助力加息 +<span class="help-num"></span>%</p>
+        <p class="help-text com-help">您的好友已完成加息2%</p>
+    </div>
+    <div class="process">
+        <img src="jiaxi/process.png" alt="">
+        <div class="process-box">
+            <div class="process-color"></div>
+            <p class="process-complete-text com-help">已完成助力加息，活动期间投资可享2%加息</p>
+            <div class="process-num-box">
+                <div class="process-num">
+                    <img src="jiaxi/process-num.png" alt="">
+                    <p class="process-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="friends relative">
+    <img class="friends-title" src="jiaxi/friends.png" alt="">
+    <ul class="friends-list" style="display: none">
+        <li class="friends-item clearfix">
+            <div class="photo" style="background-image: url({{weixinIcoUrl}})"></div>
+            <div class="info">
+                <p class="name">{{weixinNickname}}</p>
+                <p class="des">{{ decription}}</p>
+            </div>
+            <div class="num">+{{helpRate}}</div>
+        </li>
+    </ul>
+    <div class="no-content" style="display: none">
+        <div class="no-content-box">
+            <img src="jiaxi/no-content.png" alt="">
+            <p>暂无加息亲友团成员</p>
+        </div>
+    </div>
+    <div class="more-info" style="display: none">
+        <img class="more-info-img" src="jiaxi/arrow.png" alt="">
+    </div>
+</div>
+<div class="register relative">
+    <img src="jiaxi/register-bg.png" alt="">
+    <img id="register" class="register-btn" src="jiaxi/register-btn.png" alt="">
+</div>
+<div class="advantage relative">
+    <img src="jiaxi/advantage.png" alt="">
+</div>
+<script>
+    require('jiaxi/jiaxi2');
+</script>
+
+</body>
+</html>

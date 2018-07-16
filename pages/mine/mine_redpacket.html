@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的红包</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+
+    <nav class="redpacketnav">
+    	<ul>
+    		<li><a class="act" data-value="1">可用红包</a></li>
+    		<li><a data-value="2">已用红包</a></li>
+    		<li><a data-value="3">过期红包</a></li>
+    	</ul>
+    </nav>
+
+    <article class="packetList">
+    	<section>
+        <ul id="avaiPacketList" style="display: none">
+            <li class="red-packet-list not-use clearfix">
+                <img class="top-right {{isActive}}" src="mine_redpacket/not-use-flag.png" alt="理财师派发"></img>
+                <div class="title">{{remark}}</div>
+                <div class="left">
+                    <img src="mine_redpacket/use-redpack.png" alt="">
+                    <div class="red-packet-money">
+                        <p><span>￥</span>{{redpacketMoney}}</p>
+                        <p>{{name}}</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>首投限制：{{investLimetText}}</p>
+                    <p>适用平台：{{platform}}</p>
+                    <p>适用产品：<span class="rolling-box"><span class="rolling">{{produce}}</span></span></p>
+                    <p>过期时间：{{expireTime}}</p>
+                </div>
+            </li>
+        </ul>
+    	</section>
+
+      <section>
+          <ul id="usedPacketLis" style="display: none">
+              <li class="red-packet-list used clearfix">
+                  <img class="top-right {{isActive}}" src="mine_redpacket/use-flag.png" alt="理财师派发"></img>
+                  <div class="title">{{remark}}</div>
+                  <div class="left">
+                      <img src="mine_redpacket/used-redpack.png" alt="">
+                      <div class="red-packet-money">
+                          <p><span>￥</span>{{redpacketMoney}}</p>
+                          <p>{{name}}</p>
+                      </div>
+                  </div>
+                  <div class="right">
+                      <p>首投限制：{{investLimetText}}</p>
+                      <p>适用平台：{{platform}}</p>
+                      <p>适用产品：<span class="rolling-box"><span class="rolling">{{produce}}</span></span></p>
+                      <p>过期时间：{{expireTime}}</p>
+                      <img src="mine_redpacket/use-back.png" alt="使用情况">
+                  </div>
+              </li>
+          </ul>
+      </section>
+
+      <section>
+          <ul id="expiredPacketList" style="display: none">
+              <li class="red-packet-list used clearfix">
+                  <img class="top-right {{isActive}}" src="mine_redpacket/use-flag.png" alt="理财师派发"></img>
+                  <div class="title">{{remark}}</div>
+                  <div class="left">
+                      <img src="mine_redpacket/used-redpack.png" alt="">
+                      <div class="red-packet-money">
+                          <p><span>￥</span>{{redpacketMoney}}</p>
+                          <p>{{name}}</p>
+                      </div>
+                  </div>
+                  <div class="right">
+                      <p>首投限制：{{investLimetText}}</p>
+                      <p>适用平台：{{platform}}</p>
+                      <p>适用产品：<span class="rolling-box"><span class="rolling">{{produce}}</span></span></p>
+                      <p>过期时间：{{expireTime}}</p>
+                      <img src="mine_redpacket/used-back.png" alt="使用情况">
+                  </div>
+              </li>
+          </ul>
+      </section>
+    </article>
+
+	<script type="text/javascript"> 
+		  require('mine_redpacket/mine_redpacket');
+	</script>
+</body>
+</html>

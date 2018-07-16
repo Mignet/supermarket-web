@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+
+<body>
+
+<main class="main">
+    <header class="header" style="display: none;">
+        <div class="org-logo"><img id="organizationLogo" ></div>
+        <span id="organizationLevel" style="display: none;"></span>
+        <div>
+            <p class="orgAdvantage"></p>
+            <p class="orgTagText"><span class="orgLevel"><i></i></span></p>
+        </div>
+    </header>
+    <!-- 新增 -->
+    <section style="display: none;">
+        <ul class="flex tabSwitch">
+            <li class="oneFlex "><span class="active" >平台简介</span></li>
+            <li class="oneFlex"><span>平台档案</span></li>
+            <li class="oneFlex"><span>团队介绍</span></li>
+            <li class="oneFlex"><span>安全保障</span></li>
+        </ul>
+        <div id="tabContent" class="tabContent">
+            <div>
+                <pre class="orgProfile clamp4">{{orgProfile}}</pre>
+                <p class="arrowStatus"></p>
+            </div>
+            <div class="orgRecord " style="display: none;">
+                <ul class="height">
+                    <li>
+                        <span>年化收益</span>
+                        <span>{{feeRateMin}}-{{feeRateMax}}%</span>
+                    </li>
+                    <li>
+                        <span>产品期限</span>
+                        {{deadLineText}}
+                    </li>
+                    <li>
+                        <span>注册资本</span>
+                        <span>{{capital}}</span>
+                    </li>
+                    <li>
+                        <span>上线时间</span>
+                        <span>{{upTime}}</span>
+                    </li>
+                    <li>
+                        <span>所在城市</span>
+                        <span>{{city}}</span>
+                    </li>
+                    <li>
+                        <span>平台背景</span>
+                        <span>{{orgBack}}</span>
+                    </li>
+                    <li>
+                        <span>资金托管</span>
+                        <span>{{trusteeship}}</span>
+                    </li>
+                    <li>
+                        <span>ICP备案</span>
+                        <span>{{icp}}</span>
+                    </li>
+                </ul>
+                <p class="arrowStatus arrowDown"></p>
+            </div>
+            <div  style="display: none;" class="managerIntro">
+                <div class="height" id="managerIntro">
+                    <div class="personal-box">
+                      <div class="personal clearfix">
+                        <img src="../../static/images/icon_ceo.png" data-src="{{orgIcon}}">
+                      </div>
+                      <div class="textBox">
+                        <div>
+                           <span id="name">{{orgMemberName}}</span>
+                           <span id="job">{{orgMemberGrade}}</span>
+                        </div>
+                        <div class="personal-detail">{{orgDescribe}}</div>         
+                      </div>
+                   </div>
+                </div>
+                <p class="arrowStatus arrowDown"></p>
+            </div>
+            <div  style="display: none;">
+                <pre id="orgSecurity" class="clamp4">
+                    
+                </pre>
+                <p class="arrowStatus"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 机构活动宣传 -->
+    <div class="orgActivity swiper-container" >
+        <div class="swiper-wrapper" id="orgActivity">
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="investStrategy" style="display: none;">查看投资攻略</div>
+    <div class="toolbar-top"></div>
+</main>
+
+<!--     <div class="ios-fixed-hack"></div>
+
+    <footer id="footer" class="footer">
+      <a>进入平台</a>
+    </footer> -->
+
+<!--     <form id="form" action="" method="get" accept-charset="utf-8" style="display: none">
+       <input id="orgAccount"     type='hidden' name="orgAccount" />
+       <input id="orgKey"         type='hidden' name="orgKey" />
+       <input id="orgNumber"      type='hidden' name="orgNumber" />
+       <input id="sign"           type='hidden' name="sign" />
+       <input id="timestamp"      type='hidden' name="timestamp" />
+    </form>     -->
+
+<script type="text/javascript">
+    require('info/info');
+</script>
+</body>
+</html>

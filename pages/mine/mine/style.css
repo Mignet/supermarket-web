@@ -1,0 +1,496 @@
+/**
+ *@清除浮动
+ */
+body {
+    position: relative;
+}
+
+header {
+    background: #fff;
+}
+
+header h1 {
+    font-size: .17rem;
+    padding-left: .14rem;
+    color: #969696;
+}
+
+header h2 {
+    font-size: .5rem;
+    color: #fd5353;
+    padding-left: .14rem;
+}
+
+header h1 img {
+    width: .22rem;
+    vertical-align: top;
+}
+
+.user-info {
+    padding: .14rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.user-info-content {
+    width: 3.5rem;
+    float: left;
+}
+
+.portrait {
+    float: left;
+    width : .59rem;
+    height: .59rem;
+}
+
+.portrait img {
+    border-radius: 100%;
+    width:100%;
+    height:100%;
+}
+
+.user-info-detail {
+    float: left;
+    margin-left: .1rem;
+}
+
+.user-info-detail span {
+    display: inline-block;
+}
+
+.username {
+    font-size: .23rem;
+    padding-bottom: .04rem;
+}
+
+.mobile {
+    color: #969696;
+}
+
+.authentication {
+    padding: .02rem .1rem;
+    text-align: center;
+    background: #fd5353;
+    border-radius: .1rem;
+    font-size: .10rem;
+    margin-left:.05rem;
+    color:#fff;
+    font-size: .11rem;
+}
+
+.authentication.none{
+  background-color: #dcdcdc;
+  background-image: url( '../../../static/images/icon-arrow-right.png');
+  background-repeat: no-repeat;
+  background-position: 93%;
+  background-size: .11rem;
+  display: inline-block;
+  padding-right: .15rem;
+  cursor: pointer;
+}
+
+
+/**
+ *@消息统计
+ */
+
+.message-count {
+    width: .26rem;
+    float: left;
+}
+
+.myQRCode {
+	width:.26rem;
+    position: relative;
+    padding-top: .12rem;
+}
+
+.myQRCode a {
+	display:block;
+}
+
+.myQRCode span {
+	display: block;
+	width: .23rem;
+	height: .23rem;
+	text-align: center;
+	line-height: .23rem;
+	color: #fff;
+	background: #f43531;
+	position: absolute;
+	z-index: 11;
+	font-size: .14rem;
+	border-radius: 100%;
+    border: 1px solid #fff;
+	left: .14rem;
+	top: 0;
+}
+
+/**
+ *@总资产显示隐藏
+ */
+.check-eye{
+    padding-top: .1rem;
+    position: relative;
+    width: 100%;
+}
+.total-profit-box {
+    border-bottom: 1px dashed #efefef;
+}
+.total-profit{
+    display: inline-block;
+    font-size: .5rem;
+    color: #fd5353;
+    margin-left: .14rem;
+    line-height: .8rem;
+    height: .8rem;
+    vertical-align: middle;
+}
+
+.total-profit-text{
+    position: absolute;
+    top:.5rem;
+    right:.15rem;
+    color:#969696;
+    padding-right: .2rem;
+}
+
+.check-QRCode {
+    position: absolute;
+    right: .14rem;
+    top: 1.1rem;
+}
+.check-QRCode img {
+    width: .28rem;
+}
+
+/**
+ *@总收益
+ */
+.double_direction {
+    padding: 0 .14rem .1rem .14rem;
+    display:block;
+}
+
+.double_direction span {
+    display: inline-block;
+    font-size: .17rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.double_direction span:first-child {
+    color: #969696;
+    padding-right: .08rem;
+}
+
+.double_direction span:last-child {
+    color: #fd5353;
+    font-size: .23rem;
+}
+
+
+/*
+ * 菜单栏
+ */
+ .menu_wrapper li:first-child{
+    height: 0.92rem;
+    margin-bottom: .15rem;
+    position: relative;
+ }
+
+.menu_wrapper li:first-child p{
+    padding-left: .14rem;
+    color: #969696;
+}
+.menu_wrapper li:first-child > p:first-child{
+    line-height: 0.14rem;
+    font-size: 0.14rem;
+    color: #969696;
+    padding-top: 0.23rem;
+}
+.menu_wrapper li:first-child p.accountBalance{
+    display: inline-block;
+    line-height: 0.28rem;
+    color: #fd5353;
+    font-size: 0.28rem;
+    vertical-align: middle;
+}
+.menu_wrapper .investmentText{
+    position: absolute;
+    top:.4rem;
+    right:.15rem;
+    color:#969696;
+    padding-right: .2rem;
+}
+
+.menu_wrapper li:nth-child(2){
+    border-top: solid 1px #f1f1f1;
+}
+
+.menu_wrapper li{
+    height:.5rem;
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    background-color: #fff;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.menu_wrapper li > a{
+    position: relative;
+    flex:1;
+    -webkit-flex:1;
+    -webkit-box-flex:1;
+    width:50%;
+    display: block;
+}
+
+.menu_wrapper li > a:last-child{
+    border-left: 1px solid #f1f1f1;
+}
+
+.menu_wrapper li > a > img{
+    position: absolute;
+    top:.13rem;
+    left:.14rem;
+    width:.25rem;
+    height:.25rem;
+}
+
+.menu_wrapper p{
+   padding-left:.5rem;
+    line-height: .5rem;
+}
+
+.pBox{
+   position: relative;
+}
+
+.menu_wrapper p{
+    font-size: .17rem;
+}
+
+.menu_wrapper p .arrow{
+    float: right;
+    color:#969696;
+    font-size: .13rem;
+    padding-right: .2rem;
+    margin-right: .15rem;
+}
+
+.hongbaoCount span {
+    width: .2rem;
+    height: .2rem;
+    text-align: center;
+    line-height: .2rem;
+    color: #fff;
+    display: inline-block;
+    background: #f43531;
+    font-size: .13rem;
+    border-radius: 100%;
+    border: 1px solid #fff;
+}
+
+/*.menu_wrapper p:nth-child(2){*/
+    /*font-size: .13rem;*/
+    /*float: right;*/
+    /*width: 2rem;*/
+    /*color:#969696;*/
+/*}*/
+/*.menu_wrapper span{*/
+    /*color: #fd5353;*/
+/*}*/
+
+.balance-text {
+    width: 50%;
+}
+
+.balance-text span {
+    display: block;
+    margin: 10px 0 0 10px;
+}
+/*新增*/
+/*.balance-text span:nth-of-type(2){*/
+    /*margin: 5px 0 0 10px;*/
+/*}*/
+/*.balance-text .title {*/
+    /*font-size: .13rem;*/
+    /*color:#969696;*/
+/*}*/
+
+/*.balance-text .money {*/
+    /*font-size: .17rem;*/
+/*}*/
+
+/*.balance-btn {*/
+    /*width: 50%;*/
+    /*text-align: right;*/
+/*}*/
+/*.balance-btn a{*/
+    /*display: block;*/
+    /*line-height: 0.6rem;*/
+    /*font-size: 0.15rem;*/
+    /*padding-right: 0.25rem;*/
+    /*margin-right: 0.1rem;*/
+    /*color: #969696;*/
+/*}*/
+
+/**
+* bubbleTip样式重改
+*/
+.bubbleWraper .bubble .bubbleButton a{
+    color: #323232;
+    font-size: 0.2rem;
+}
+.bubble p{
+    text-align: left;
+}
+
+/**
+ * 弹出层
+ */
+.layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 7.36rem;
+    z-index: 1000000;
+    overflow: hidden;
+}
+
+.layer__bg {
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.5 );
+    z-index: 1000001;
+    cursor: pointer;
+}
+
+.layer__content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    z-index: 1000002;
+}
+
+.layer__content--detail {
+    position: relative;
+    width: 88%;
+    margin: 0 auto;
+    border-radius: .1rem;
+}
+
+.layer__content--btn {
+    position: absolute;
+    right: -.1rem;
+    top: -.8rem;
+    z-index: 103;
+    color: #fff;
+    font-size: .24rem;
+    width: .5rem;
+    height: .5rem;
+    line-height: .35rem;
+    text-align: center;
+    cursor: pointer;
+}
+.layer__content--btn img {
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    margin: 0 auto;
+    background: #323232;
+    border-radius: 100%;
+}
+.layer__content--btn i {
+  display: block;
+  height: .5rem;
+  width: 0;
+  border: 0;
+  border-left: 1px solid #969696;
+  margin-left: .25rem;
+}
+
+.layer__content--context {
+  background-color: #fff;
+  border-radius: 8px;
+  height: 50%;
+}
+.layer__content--context h1 {
+  padding-top: .4rem;
+  padding-bottom: .32rem;
+  font-size: .2rem;
+  color: #6a6a6a;
+  text-align: center;
+}
+.layer__content--context a {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 3.16rem;
+  height: .58rem;
+  line-height: .58rem;
+  color: #fff;
+  background-color: #fd5353;
+  text-align: center;
+  font-size: .2rem;
+  margin-bottom: .3rem;
+}
+
+.layer__content--img {
+    overflow-y: scroll;
+    border-radius: .1rem;
+    padding: 0 .36rem .3rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.block{
+  display: block;
+}
+.nameHidden{
+  visibility: hidden;
+  height:.15rem;
+}
+
+/* 未登录 */
+.no-login {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.no-login-content {
+    width: 100%;
+    left: 0;
+    bottom: 60px;
+    position: fixed;
+}
+
+.no-login-banner {
+    height: auto;
+    width: 75%;
+}
+
+.button-item {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.no-login-button button{
+    width: 1.7rem;
+    height: .55rem;
+    color: #fff;
+    font-size: 18px;
+    background: #7e99ce;
+    border: none;
+    border-radius: 6px;
+}

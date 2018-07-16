@@ -1,0 +1,29 @@
+.readA{
+	color:#007aff;
+	padding-left:.05rem;
+}
+
+.registerMobile{
+	color:#000;
+}
+.login_logo{
+	width:1.38rem;
+	padding:.4rem 0 .8rem 0;
+	margin:0 auto;
+	text-align:center;
+}
+.registerMobile .inputList{
+	border:none;
+}
+.registerMobile .inputList li{
+	border-color:#f3f3f3;
+}
+.loginText{
+	margin-top:.2rem;display:none;text-align:center;
+}
+.recommendText{
+	display:none;
+	padding-top:.22rem;
+	margin-left:.14rem;
+	color:#646464;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>意见反馈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<!-- <meta name="format-detection" content="telephone=no, email=no" /> -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+
+		<div class="feedback" id="feedback">
+			<textarea name="content" data-key="反馈内容" required id="inputFeedback" maxlength="140" placeholder="有什么问题尽管吐槽，我们一定改进！"></textarea>
+			<p>还可输入<span id="wordNum">140</span>字</p>
+		</div>
+
+	</div>
+
+	<div class="quiet">
+		<a class="button" id="quiet">提交</a>
+	</div>
+
+	<script type="text/javascript">
+		require('feedback/feedback');
+	</script>
+	
+</body>
+</html>

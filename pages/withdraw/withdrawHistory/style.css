@@ -1,0 +1,66 @@
+.withDrawTotal{
+	color:#969696;
+	background:#fff;
+	padding:.14rem .2rem;
+}
+
+.withDrawTotal span{
+	color:#fb5353;
+	font-size:.27rem;
+}
+.withDrawTotal p:first-child{
+	margin-bottom:.05rem;
+}
+
+.withDrawHistoryList{
+	margin:.14rem 0;
+/*	border-top:solid 1px #e2e2e2;*/
+}
+
+.withDrawHistoryList{
+	background:#fff;	
+}
+.withDrawHistoryList p {
+	font-size: .14rem;
+}
+
+.withDrawHistoryList li{
+	position:relative;
+	border-bottom: 1px solid #f1f1f1;
+	margin-left:.14rem;
+	padding:.24rem 0;
+}
+.remark {
+	padding-top: .1rem;
+}
+.withDrawHistoryList .amount {
+	font-size: .2rem;
+}
+
+.time {
+	color:#969696;
+	line-height: 2em;
+}
+
+.widthDrawTip{
+	position: absolute;
+	right:.14rem;
+	top:.24rem;
+	text-align: right;
+}
+
+.gray{
+	color:#969696;
+}
+
+.green{
+	color:#19ca2d;
+}
+
+.red{
+	color:#fb5353;	
+}
+
+.hidden{
+	display: none;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>更多</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<!-- <meta name="format-detection" content="telephone=no, email=no" /> -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<div class="aboutWraper">
+			<div class="downloadLogo">
+				<div class="downloadLogoImg" id="downloadLogoImg">
+					<img src="../../static/images/about_logo.png" />
+				</div>
+				<p class="version">版本 2.1.0</p>
+			</div>
+			
+			<ul class="mine_more" id="mine_more">
+				<li class="arrow">
+					<a href="./aboutMe.html">关于我们</a>
+				</li>
+				<li class="arrow">
+					<a href="tel:{{serviceTelephone}}">客服电话<span>{{serviceTelephone}}</span></a>
+				</li>
+				<li id="wechat">
+					<a>官方微信<span>{{wechatNumber}}</span></a>
+				</li>
+				<li class="arrow">
+					<a href="mailto:{{serviceMail}}">客服邮箱<span>{{serviceMail}}</span></a>
+				</li>
+				<li class="arrow">
+					<a href="feedback.html">意见反馈</a>
+				</li>
+			</ul>
+		</div>
+		<div class="quiet">
+			<a class="button" id="quiet">退出登录</a>
+		</div>
+	</div>
+
+	<script type="text/javascript"> 
+		require('about/about');
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>T呗账户余额</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+		<div class="header">
+			<div class="total_amount">
+				<p>T呗账户余额(元)
+					<!--<span id="accountDetail" class="question" style="display: none;"></span>-->
+				</p>
+				<a href="mine_account_detail.html" id="rewardBalance">0.00</a>
+			</div>
+
+			<div class="withdraw_btn">
+				<a id="withdraw_link">提现</a>
+			</div>
+		</div>
+		<div style="width: 100%;box-sizing: border-box;padding-left: .14rem;background-color: #fff;">
+			<p style="width: 100%;border-top: 1px dashed #dcdcdc"></p>
+		</div>
+		<div class="reward-money-wraper">
+			<div class="reward-money">
+				<div>
+					<p>账户收入(元)</p>
+					<p id="rewardIncome">0.00</p>
+					<p></p>
+				</div>
+				<div>
+					<p>账户支出(元)</p>
+					<p id="rewardPay">0.00</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul class="flex tab-switch">
+				<li class="oneFlex" data-value="0"><a class="active">　全部　</a></li>
+				<li class="oneFlex" data-value="1"><a>　收入　</a></li>
+				<li class="oneFlex" data-value="2"><a>　支出　</a></li>
+			</ul>
+			<div class="reward-wrapper">
+				<ul id="rewardBox">
+					<li>
+						<div class="clearfix">
+		                	<div class="detail-left">
+		                		<h1>{{tranName}}<span class="user-type-color">({{userType}})</span></h1>
+		                    <p>{{tranTime}}</p>
+		                	</div>
+		                  <span class="{{transAmountClass}} detail-right">{{amount}}元</span>
+		                </div>
+		                <div class="detail-footer clearfix">
+		                	<span>{{remark}}</span>
+		                	<span class="reward-out question {{questionClass}}" data-failureCause="{{failureCause}}"></span>
+		                	<p>{{withdrawRemark}}</p>
+		                </div>
+					</li>
+				</ul>
+				<div class="empty none">
+					<img src="../../static/images/no-data.png">
+					<p class="empty-text">暂无奖励支出，快去投资赚收益吧！</p>
+					<a href="/pages/financing/manageMoney.html">去投资</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require('mine_account/mine_account');
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.bindSucc{
+	text-align:center;
+	padding:.3rem 0;
+	text-align:center;
+	background-color: #fff;
+}
+.succImg img{
+	width:.85rem;
+}
+.bindSucc h1{
+	font-size:.18rem;
+	color:#000;
+	margin-top:.2rem;
+}
+.firstInfo{
+	padding:.14rem .14rem 0 .14rem;
+	color:#969696;
+}
+.firstInfo h2{
+	color:#dc4437;
+	font-size:.16rem;
+}
+
+.reminder{
+	padding: 0 .14rem;
+	margin: .17rem 0; 
+	color: #828282;
+}
+
+.reminder h2{
+	color:#323232;
+}
+
+.reminder a{
+	color:#007aff;
+}
+.button-bottom{
+	margin: .3rem 0;
+}

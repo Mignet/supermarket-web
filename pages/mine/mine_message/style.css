@@ -1,0 +1,120 @@
+
+nav ul {
+    background-color: #f6f6f7;
+}
+
+nav li {
+	float: left;
+	width: 50%;
+	text-align: center;
+    height:.5rem;
+    line-height: .5rem;
+}
+
+nav a {
+	display: inline-block;
+	color: #969696;
+	font-size: .16rem;
+    height:100%;
+    width:50%;
+}
+
+nav li.active a {
+	border-bottom: 2px solid #7e99ce;
+	font-size: .18rem;
+	color: #7e99ce;
+}
+
+.each-common {
+    display: none;
+}
+.btn-circle{
+    display: inline-block;
+    background: #f50808;
+    width: .23rem;
+    height: .23rem;
+    vertical-align: middle;
+    line-height: 0.23rem;
+    border-radius: 50%;
+    font-size: 0.14rem;
+    color: #fff;
+}
+.inline-block{
+    display: inline-block!important;
+}
+.None{
+    display: none;
+}
+.each-common.active {
+    display: block;
+}
+
+.bulletin-list{
+    background-color: #fff;
+    display: none;
+}
+
+.bulletin-list li{
+    margin-left:0.27rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding:.19rem 0;    
+}
+
+.each-product div:first-child{
+   margin-bottom: .1rem;
+   color:#969696;
+}
+
+.each-product div:last-child{
+    font-size: .18rem;
+    width:3.5rem;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+.gray_font{
+    color:#c8c8c8!important;
+}
+
+.underSelect-list{
+    background-color: #fff;
+    display: none;
+}
+
+.underSelect-list li{
+    margin-left: .27rem;
+    padding:.2rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+.underSelect-list li > div:first-child{
+   margin-bottom: .1rem;
+   color:#969696;
+}
+
+.underSelect-list li > div:last-child{
+    font-size: .18rem;
+}
+.underSelect-list li > div:last-child a{
+    color: #3057fd;
+    text-decoration: underline;
+}
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    height:.58rem;
+    line-height: .58rem;
+    background-color: #7e99ce;
+    text-align: center;
+    color:#fff;
+    font-size: .2rem;
+    width:100%;
+}
+
+
+
+
+

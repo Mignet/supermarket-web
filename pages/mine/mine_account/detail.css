@@ -1,0 +1,130 @@
+.header{
+    height:.58rem;
+    line-height: .58rem;
+    background-color: #fff;
+    font-size:.17rem;
+}
+
+.header > div:first-child{
+    float: left;
+    padding-left:.2rem;
+}
+
+.header > div:last-child{
+    float: right;
+    padding-right:.25rem;
+}
+
+.font-color{
+    color:#fb5353;
+}
+
+.arrow-up {
+    position: absolute;
+    top: .22rem;
+    right:.1rem;
+    margin-left: .05rem;
+    width: 0;
+    height: 0;
+    border-width: .05rem;
+    border-style: solid;
+    border-color: #fff #fff #323232;
+}
+
+.arrow-down {
+    position: absolute;
+    top: .28rem;
+    right:.1rem;
+    margin-left: .08rem;
+    width: 0;
+    height: 0;
+    border-width: .05rem;
+    border-style: solid;
+    border-color: #323232 #fff #fff;
+}
+
+.select{
+  position: absolute;
+  width:100%;
+  z-index: 99;
+}
+
+.select ul{
+    display: none;
+}
+
+.select li{
+    height:.5rem;
+    line-height: .5rem;
+    padding:0 .14rem;
+    font-size: .19rem;
+    background-color: #fff!important;
+    border-top: 1px solid #f1f1f1;
+}
+
+.mask{
+  position: fixed;
+  width:100%;
+  height:100%;
+  background-color:#666666;
+  z-index: 99;
+  opacity: .5;
+  display: none;
+}
+
+.select li.selected{
+  background:url(../../../static/images/icon_selected.png) 96% center no-repeat;
+  background-size:.15rem .17rem;
+  color:#fb5353;
+}
+
+.detialList li{
+  background-color: #fff;    
+  margin-top: .15rem; 
+}
+
+.detialList li > div:first-child{
+  margin-left: .14rem;
+  padding:.14rem .14rem .14rem 0;  
+  position: relative;  
+}
+
+.detialList li > div:first-child h1{
+   font-size: .18rem;
+}
+
+.detialList li > div:first-child p{
+   color:#969696;
+   margin-top: .05rem;
+}
+
+.come_in{
+   position: absolute;
+   right:.14rem;
+   top:.3rem;
+   color:#fd5353;
+   font-size: .18rem;
+}
+
+.come_out{
+   position: absolute;
+   right:.14rem;
+   top:.15rem;
+   color:#19ca2d;
+   font-size: .18rem;
+   text-align: center;
+}
+
+.detialList li > div:last-child{
+  margin-left: .14rem; 
+  line-height: .45rem;
+  height:.45rem;
+  border-top:1px solid #f1f1f1;
+  color:#646464;
+}
+
+
+
+
+
+

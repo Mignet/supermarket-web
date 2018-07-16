@@ -1,0 +1,95 @@
+body,html{
+  background: url('../images/inviteRegister-bg.png');
+}
+.login_logo{
+  height: 3.2rem;
+  overflow: hidden;
+}
+#formTitle{
+  color: #ffe65e;
+  font-weight: bold;
+}
+.inputList{
+  width: 3.76rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #f1f1f1;
+}
+.inputList:nth-of-type(2){
+  margin-top: 0.14rem;
+}
+.inputList li{
+  background: #fff;
+  border: 0;
+}
+.inputList li:first-child{
+  border-bottom: 1px solid #f1f1f1;
+}
+.login2Form{
+  color:#000;
+}
+.agree{
+  color:#fff;
+  margin-top: .1rem;
+  text-align:center;
+}
+.agree a{
+  color:#f2cf11;
+}
+.imgCode{
+  width:0.74rem;
+  overflow:hidden;
+  height: 0.35rem;
+}
+.subButton{
+  margin-top: 0.23rem;
+}
+.phoneCode{
+  background: #eb1934;
+  width: 0.94rem;
+  height: 0.38rem;
+  line-height: 0.38rem;
+  border-radius:5px; 
+  top: 0.06rem;
+  font-size: 0.14rem;
+  right: 0.1rem;
+  color: #fff;
+}
+.phoneCode:after{
+  height: 50%;
+  top: 25%;
+  width: 0;
+}
+.hadPhoneCode .inputWraper{
+  margin-left: 5.8em;
+  margin-right: 5em;
+}
+#imgCode{
+  top: 0.07rem;
+  left: 0.1rem;
+}
+.imgCode img{
+  height:100%;
+  display: block;
+}
+.padding{
+  padding: 0 0.19rem;
+}
+a.button{
+  background: #ffe65e;
+}
+.bodyBottom{
+  color:#ffe65e;
+}
+.hadPhoneCode .hadSend{
+  background: #dcdcdc;
+  color: #969696;
+}
+a.disButton{
+  color:#969696;
+}
+/*注册界面变高,不使用绝对定位*/
+.bodyBottom{
+  position: static;
+}

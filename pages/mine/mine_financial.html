@@ -1,0 +1,96 @@
+<!-- 对接优信钱包 -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的投资</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+<div id="wraper" class="wraper" style="display: none;">
+    <div id="emptyOrgContainer" class="empty-org-container" style="display: none;">
+        <img src="mine_financial/empty.png">
+        <p>目前暂未开通平台哦~</p>
+    </div>
+    <div id="orgContainer" class="org-container">
+        <div class="title">
+            <h2>投资分布</h2>
+        </div>
+        <ul id="orgList" class="org-lists">
+            <li class="org-list">
+                <div class="top arrow">
+                    <img class="icon" src="{{platformListIco}}" alt="{{orgName}}">
+                    <div class="withdraw" data-num="{{orgNumber}}" data-name="{{orgName}}" data-status="{{status}}" data-url="{{cooperationEndUrl}}">提现/充值</div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <h2>{{investAmount}}</h2>
+                        <p>投资总额(元)</p>
+                    </div>
+                    <div class="right">
+                        <h2>{{totalProfix}}</h2>
+                        <p>累计收益(元)</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="recordContainer" class="record-container">
+        <div class="title">
+            <h2>投资记录</h2>
+        </div>
+        <div class="record-wrapper">
+            <div id="tab" class="tab">
+                <div class="tab-item active" data-index="0">
+                    <span>在投产品</span>
+                </div>
+                <div class="tab-item" data-index="1">
+                    <span>已到期产品</span>
+                </div>
+            </div>
+            <div id="recordingEmptyContainer" class="recording-empty-container" style="display: none;">
+                <img src="mine_financial/empty.png">
+                <p>目前暂未持有产品哦~</p>
+            </div>
+            <ul id="recording" class="recording">
+                <li class="recording-item">
+                    <div class="product-intro">
+                        <div class="top">
+                            <img src="{{platformlistIco}}">
+                            <p class="ellipsis">{{productName}}</p>
+                        </div>
+                        <div class="bottom">
+                            <p>投资时间：{{startTime}}</p>
+                            <span class="{{isCanRedemptionClass}}">可赎回</span>
+                        </div>
+                    </div>
+                    <div class="product-detail">
+                        <div class="detail-item">
+                            <span>投入本金(元)</span>
+                            <span>{{investAmt}}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>预期收益(元)</span>
+                            <span>{{profit}}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>预期到期时间(元)</span>
+                            <span>{{profit}}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require('mine_financial/index');
+</script>
+</body>
+</html>

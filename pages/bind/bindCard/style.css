@@ -1,0 +1,61 @@
+
+.inputBox{
+  margin:.15rem 0;
+}
+
+.inputBox > div{
+  height:.5rem;
+  line-height: .5rem;
+  background-color: #fff;
+  padding-left:.15rem;
+  box-sizing: border-box;
+}
+
+.inputBox > div:nth-child(2){
+	border-top:1px solid #f1f1f1;
+}
+
+.inputBox label{
+	display: inline-block;
+	font-size: .18rem;
+	width:1rem;
+    box-sizing: border-box;
+}
+
+.inputBox input{
+	height:.49rem;
+	line-height: .49rem;
+	box-sizing: border-box;
+	vertical-align: top;
+	border:none;
+	width:70%;
+	font-size: .18rem;
+}
+
+select{
+	height:.49rem;
+	line-height: .49rem;
+	box-sizing: border-box;
+	vertical-align: top;
+	border:none;
+	width:70%;
+	font-size: .18rem;
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url(../../../static/images/arrow.png) no-repeat right center;
+	/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+	padding-right: 14px;
+	background-size:auto .16rem;
+	color:#969696;
+}
+
+.buttonBox{
+	margin: .85rem .15rem;
+}
+
+.color{
+   color:#323232;
+}

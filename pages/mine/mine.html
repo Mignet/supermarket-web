@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+<main>
+    <header>
+        <div class="clearfix user-info">
+            <div class="clearfix user-info-content">
+                <a class="portrait" href="../setting/setting.html">
+                    <img src="../../static/images/mine_headportrait.png">
+                </a>
+
+                <div class="user-info-detail">
+                    <div class="username"></div>
+                    <div>
+                        <span class="mobile"></span>
+                        <span class="authentication"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 消息统计 -->
+            <div class="message-count">
+                <div class="myQRCode">
+                    <a href="mine_message.html">
+                        <img src="../../static/images/mine_message.png"/>
+                        <span class="msgCount" style="display:none"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 投资总额 -->
+        <div id="checkEye" class="check-eye">
+            <h1>
+                <span>累计收益（元）&nbsp;</span>
+                <img class="open"  src="../../static/images/mine_eye_open.png" style="display: none">
+                <img class="close" src="../../static/images/mine_eye_close.png"  style="display: none">
+            </h1>
+            <p class="total-profit-box"><a class="total-profit investAmount">0.00</a>
+                <span id="totalIncomeQuestion" class="question"></span>
+            </p>
+            <a class="total-profit-text arrow">我的投资</a>
+        </div>
+    </header>
+
+    <ul class="menu_wrapper">
+        <li>
+            <a id="platform_link" href="mine_platform.html">
+                <p>T呗账户余额（元）</p>
+                <div> 
+                    <p class="accountBalance">0.00</p>
+                    <!--<span id="balanceQuestion" class="question"></span>-->
+                </div>
+                <span class="investmentText arrow">提现</span>
+            </a>
+        </li>
+        <li>
+            <a id="minePlatform">
+                <div class="pBox">
+                    <p>
+                        我的投资平台
+                        <span class="arrow">投资平台管理</span>
+                    </p>
+                </div>
+                <img src="../../static/images/mine_investment_org.png">
+            </a>
+        </li>
+        <li>
+            <a href="mine_planner.html">
+                <div class="pBox">
+                    <p>
+                        我的理财师
+                        <span class="arrow">理财规划</span>
+                    </p>
+                </div>
+                <img src="../../static/images/mine_planner_icon.png">
+            </a>
+        </li>
+
+        <li>
+            <a href="mine_redpacket.html">
+                <div class="pBox">
+                    <p>我的红包<span class="hongbaoCount arrow"></span></p>
+                </div>
+                <img src="../../static/images/mine_redpacket_icon.png">
+            </a>
+        </li>
+
+        <!--<li>-->
+            <!--<a href="mine_platform.html">-->
+                <!--<div class="pBox">-->
+                    <!--<p>平台管理<span class="orgcount arrow"></span></p>-->
+                <!--</div>-->
+                <!--<img src="../../static/images/mine_org.png">-->
+            <!--</a>-->
+
+
+        <!--</li>-->
+        <li>
+            <a href="mine_QRCode.html">
+            <div class="pBox">
+                <p>邀请朋友<span  class="arrow">邀请朋友一起理财</span></p>
+
+            </div>
+            <img src="../../static/images/mine_invite_friend_icon.png">
+        </a>
+        </li>
+        <li>
+
+            <a href="../question/index.html">
+                <div class="pBox">
+                    <p>常见问题<span  class="arrow">有疑问点这里</span></p>
+                </div>
+                <img src="../../static/images/mine_question.png">
+            </a>
+
+        </li>
+        <li>
+            <a href="../about/about.html">
+                <div class="pBox">
+                    <p>更多<span  class="arrow">客服电话、邮箱</span></p>
+
+                </div>
+                <img src="../../static/images/mine_more.png">
+            </a>
+        </li>
+    </ul>
+</main>
+
+<div class="layer" id="layer">
+    <div class="layer__bg" id="layerBg"></div>
+    <div class="layer__content">
+        <div class="layer__content--detail">
+            <div class="layer__content--btn" id="layerBtnCancel">
+                <img src="../../static/images/btnCancel.png"/>
+                <i></i>
+            </div>
+
+            <div class="layer__content--context">
+                <h1>实名认证用户理财师服务更到位</h1>
+                <div class="layer__content--img" id="layerContentImg">
+                    <img src="../../static/images/icon-bank-card.png"/>
+                </div>
+                <a href="../bind/bindCard.html">立即认证</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="no-login" style="display: none">
+    <div class="no-login-content">
+        <div class="no-login-banner">
+            <img src="../../static/images/register-banner.png">
+        </div>
+        <div class="no-login-button">
+            <div class="button-item"><a href="../user/register.html"><button>注册</button></a></div>
+            <div class="button-item"><a href="../user/login.html"><button>登录</button></a></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require('mine/mine');
+</script>
+
+</body>
+</html>

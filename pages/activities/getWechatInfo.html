@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取微信消息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+    <img id="img" src="" alt="">
+    <div id="info">
+
+    </div>
+</body>
+<script>
+    var $ 			= require("zepto");
+    var comm 		= require("modules/common/common");
+    var Service 	= require('modules/common/service');
+
+    var getCode = {
+        init: function() {
+            var query = comm.getQueryString();
+            if( query.state == 'getinfo' ) {
+                this.getInfo(query.code);
+            } else {
+                this.getCode();
+            }
+        },
+
+        getCode: function() {
+//            var realUrl = 'https://www.toobei.com/app/pages/activities/getWechatInfo.html';
+            var realUrl = publicConfig.static + 'http://10.16.2.92:9003/pages/activities/getWechatInfo.html';
+            var url = 'https://www.toobei.com/app/get-weixin-code.html?appid=wx4ddbb3a6f5a7cec0&redirect_uri=' + encodeURIComponent(realUrl) + '&scope=snsapi_userinfo&state=getinfo#wechat_redirect'
+            comm.goUrl(url);
+        },
+
+//        getToken: function(code) {
+//            alert('getToken');
+//            var self = this;
+//            var url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx4ddbb3a6f5a7cec0&secret=f8cb8e2c1bc1a1427892f4df6f45927d&code='+ code +'&grant_type=authorization_code';
+//            $.ajax({
+//                url: url,
+//                type: 'GET',
+//                success: function(data) {
+//                    data = JSON.parse(data);
+//                    alert(data);
+//                    self.getInfo(data.access_token, data.openid);
+//                },
+//                error: function(data) {
+//                    alert(JSON.stringify(data));
+//                }
+//            });
+//        },
+
+        getInfo: function(code) {
+            console.log(code);
+            $('#info').html(code);
+//            var self = this;
+//            var url = 'http://10.16.2.92:4000/getWechatInfo?code=' + code;
+//            $.ajax({
+//                url: url,
+//                type: 'GET',
+//                success: function(data) {
+//                    console.log(data);
+//                    $('#img').attr('src', data.headimgurl);
+//                    for(var i in data ) {
+//                        $('#info').append(i + '---' + data[i] +'</br>');
+//                    }
+//                }
+//            });
+        }
+    };
+    getCode.init();
+</script>
+</html>

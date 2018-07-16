@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>投资明细</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+	<div class="wraper">
+       <header>
+       		<div class="acc_income_wrapper clearfix arrow">
+       			<p>累计收益(元)：<span id="acc_income">----</span></p>
+       			<p><a id="investmentPlatform">投资平台</a></p>
+       		</div>
+       		<div class="chart_wrapper">
+       			<div class="chart_content"></div>
+       			<div class="income_instruction">
+       				<ul>
+       					<li> <i></i> 募集中的收益(元)：<span id="investAmt">0.00</span></li>
+       					<li> <i></i> 回款中的收益(元)：<span id="paymentAmt">0.00</span></li>
+       					<li> <i></i> 已完成的收益(元)：<span id="paymentDoneAmt">0.00</span></li>
+       				</ul>
+       			</div>
+       		</div>
+       </header>
+       
+	    <nav class="tab" id="tab">
+		    <div data-status='1'><a>募集中(<span class="investNum" id="tzz">0</span>)</a></div>
+		    <div data-status='2'><a>回款中(<span class="investNum" id="hkz">0</span>)</a></div>
+		    <div data-status='3'><a>已完成(<span class="investNum" id="hkwc">0</span>)</a></div>
+		    <div data-status='4'><a>其他(<span class="investNum" id="qt">0</span>)</a></div>
+	    </nav>
+
+	    <main class="main">
+	      <ul id="content-box" style="display:none">
+	        <li data-orgNumber="{{platfrom}}" data-orgName="{{platfromName}}">
+	            <a class="header arrow clearfix">
+		            <p>{{productName}}</p>
+		            <p>查看、赎回</p>
+	            </a>
+	            <div class="content">
+		            <div>
+			            <p>投资金额(元)</p>
+			            <p>{{investAmount}}</p>
+		            </div>
+
+		            <div class="expectIncome">
+			            <p>预期收益</p>
+			            <p class="income">{{profit}}</p>
+		            </div>
+
+		            <div>
+			            <p>产品限期</p>
+			            <p>{{deadLineText}}</p>
+		            </div>
+	            </div>
+
+	            <div class="main_bottom clearfix">
+		            <p>
+			            <span>购买日期:</span>
+			            <span>{{startDate}}</span>
+		            </p>
+	            <p>
+		            <span>到期日:</span>
+		            <span>{{endDate}}</span>
+	            </p>
+	            </div>
+	        </li>                    
+	      </ul>
+	      <ul id="other-box" style="display:none">
+	            <li data-href="{{url}}">
+	            <a class="header arrow clearfix" >
+		            <p>
+						<span>{{platfromName}}-{{productName}}</span><br>
+						<span class="buytime">购买日期:{{time}}</span>   
+		            </p>
+		            <p style="margin-top: .15rem">查看、赎回</p>
+	            </a>
+	            <div class="content">
+		            <div>
+			            <p>投资金额(元)</p>
+			            <p>{{investAmt}}</p>
+		            </div>
+		            <div style="display:none;">
+			            <p>预期收益</p>
+			            <p class="income">{{profit}}</p>
+		            </div>
+		            <div>
+			            <p>产品限期</p>
+			            <p>{{deadLine}}</p>
+		            </div>
+	            </div>
+	        </li>                    
+	      </ul>
+	    </main>	 
+        <div class="ios-fixed-hack"></div>
+	    <footer>点击“查看、赎回”，查看更多详细信息</footer>  
+	</div>
+	<script type="text/javascript">
+		require('mine_investment/mine_investment');
+	</script>
+</body>
+</html>

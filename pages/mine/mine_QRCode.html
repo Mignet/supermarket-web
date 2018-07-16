@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>邀请朋友</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- @require static/css/public.css -->
+	<script type="text/javascript" src="public/mod.js" data-loader></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<body style="background:#fff;">
+
+	<div class="wraper">
+		<div class="inviteCode">
+			
+			<div class="QRCodeImg" id="QRCodeImg">
+				
+			</div>
+
+            <div class="inviteTitle">
+            	邀请朋友一起理财
+            </div>
+
+			<div class="inviteCodeText">
+				<p>发送二维码或邀请链接给朋友</p>
+				<p>朋友注册即可一起理财</p>
+			</div>
+		</div>
+		<div  class="sendInviteCode">
+			<a id="sendInviteCode" class="button">邀请朋友</a>
+			<a id="sendInviteRecord" class="button" href="mine_QRCodeRecord.html">邀请记录</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript"> 	
+		require('mine_QRCode/mine_QRCode');
+	</script>
+</body>
+</html>

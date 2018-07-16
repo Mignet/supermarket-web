@@ -1,0 +1,10 @@
+.reminder{
+    padding:0 .14rem;
+    margin:.5rem 0 .2rem 0;
+    color:#828282;
+}
+.reminder h2{
+    font-size:.14rem;
+    color:#dc4437;
+    line-height:1.5em;
+}

@@ -1,0 +1,171 @@
+.myAccount{
+	background:#fff;
+	height: 0.69rem;
+}
+.lastMoney{
+	color:#000;
+	display: inline-block;
+	color:#969696;
+	vertical-align: middle;
+	height: .69rem;
+	line-height: 150%;
+	padding-top: .16rem;
+	padding-left: 0.14rem;
+}
+.lastMoney h1{
+	font-size:.22rem;
+	color:#fb5353;
+}
+.withdraw-history-btn {
+	float: right;
+	display: block;
+	line-height: .34rem;
+	background-color: #7e99ce;
+	text-align: center;
+	width: .62rem;
+	border-radius: .05rem;
+	color: #fff;
+	font-size: .14rem;
+	border: 1px solid #7e99ce;
+	margin-top: .2rem;
+	margin-right: 0.14rem;
+}
+.tixianHis{
+	display:block;
+	background-color:#fff;
+	border-top:solid 1px #e1e1e1;
+	border-bottom:solid 1px #e1e1e1;
+	line-height: .5rem;
+    font-size: .18rem;
+    padding-left:.14rem;
+}
+
+.showInputWDPwd{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.5);
+	display:none;
+}
+.inputWDPwdInfo{
+	position:fixed;
+	text-align:center;
+	width:80%;
+	background:#fff;
+	left:10%;
+	top:50px;
+	z-index:98;
+	border-radius: 10px;
+	color:#000000;
+}
+
+.inputWDPwdInfo h2{
+	line-height:2.5em;
+	border-bottom:solid 1px #e1e1e1;
+	font-size:.18rem;
+}
+.inputWDPwdInfo h1{
+	font-size:.34rem;
+	line-height: 2.2em;
+	border-bottom:solid 1px #e1e1e1;
+}
+
+.closeInputPwd{
+	position:absolute;
+	width:.35rem;
+	height:.35rem;
+	font-size:.3rem;
+	line-height:.35rem;
+	color:#e1e1e1;
+	left:10px;
+	top:.05rem;
+}
+.inputWDContent{
+	position:relative;
+}
+.realInput{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	padding:.14rem;
+	box-sizing:border-box;
+	opacity:0;
+	overflow:hidden;
+}
+.realInput input{
+	width:200%;
+	height:.35rem;
+	margin-left:-100%;
+}
+
+.inputWDPwd{
+	padding:.14rem;
+	display: -webkit-box;
+	display: -webkit-flex; 
+    display: flex;
+
+}
+.inputWDPwd li{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1; 
+    flex: 1;
+    height: .4rem;
+    line-height:.4rem;
+    border:solid 1px #e1e1e1;
+    font-size:.24rem;
+}
+
+.select{
+	height: 90%;
+	width:100%;
+    font-size: .18rem;
+    border:none;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;    
+	background: url(../../../static/images/icon_select.png) no-repeat right center;
+	background-size:auto .12rem;
+	color:#969696;
+}
+
+.color{
+   color:#323232;
+}
+
+.separator{
+	margin: 0 .1rem;
+	color:#dcdcdc;
+}
+
+.hidden{
+   display: none!important;
+}
+
+.limitColor{
+	color:#fb5353;
+}
+
+.reminder{
+	padding: 0 .14rem;
+	margin: .17rem 0; 
+	color: #828282;
+}
+
+.reminder h2{
+	color:#323232;
+}
+
+.reminder a{
+	color:#007aff;
+}
+.kindly-reminder{
+	color: #323232;
+	font-size: 0.14rem;
+	padding:0.15rem 0 0.25rem 0.14rem;
+}
+.button-bottom{
+	margin-bottom: .2rem;
+}

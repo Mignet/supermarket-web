@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>高搜易活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body class="articleBody">
+<div class="wraper">
+    <div>
+        <div><img src="gaosouyiwomen/1.jpg"></div>
+        <div><img src="gaosouyiwomen/2.jpg"></div>
+        <div><img src="gaosouyiwomen/3.jpg"></div>
+        <div><img src="gaosouyiwomen/4.jpg"></div>
+        <div><img src="gaosouyiwomen/title.png"></div>
+        <ul class="product-list">
+            <li>
+                <img src="gaosouyiwomen/bg.png" alt="">
+                <div class="title">{{productName}}</div>
+                <div class="year-rate">
+                    <h4>年化收益率</h4>
+                    <p>{{yearRate}}<span>%</span></p>
+                </div>
+                <div class="item deadline">
+                    <h4>投资期限(天)</h4>
+                    <p>{{deadLineText}}</p>
+                </div>
+                <div class="item money">
+                    <h4>起投金额(元)</h4>
+                    <p>{{buyMinMoney}}</p>
+                </div>
+                <a  class="btn-buy" href="/pages/financing/product_detail.html?productId={{productId}}&productName={{productName}}">
+                    <img src="gaosouyiwomen/btn.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="bottom">
+            <p class="bottom1">此活动最终解释权归高搜易所有</p>
+            <p class="bottom2">理财有风险，投资需谨慎</p>
+        </div>
+    </div>
+    <script>
+        require('modules/widget/activityShare/activityShare');
+        require('gaosouyiwomen/gaosouyiwomen');
+    </script>
+</div>
+</body>
+</html>

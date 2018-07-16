@@ -1,0 +1,22 @@
+.bindSucc{
+	text-align:center;
+	padding:.22rem 0 .2rem 0;
+	text-align:center;
+	background:#fff;
+}
+.succImg img{
+	width:.82rem;
+}
+.bindSucc h1{
+	font-size:.23rem;
+	color:#000;
+	margin-top:.2rem;
+}
+.firstInfo{
+	padding:.14rem .14rem 0 .14rem;
+	color:#969696;
+}
+.firstInfo h2{
+	color:#dc4437;
+	font-size:.16rem;
+}

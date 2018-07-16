@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>消息中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- @require static/css/public.css -->
+    <script type="text/javascript" src="public/mod.js" data-loader></script>
+</head>
+<body>
+    <nav>
+        <ul class="clearfix" id="nav">
+            <li class="active"  data-index="1">
+                <a>
+                    通知 <span id="personCount" class="btn-circle None"></span>
+                </a>
+            </li>
+            <li data-index="0">
+                <a>
+                    公告 <span id="bulletinCount" class="btn-circle None"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="each-common">
+            <ul id="bulletinList" class="bulletin-list">
+                <li href="{{link}}" class="each-product arrow" data-id="{{id}}">
+                    <div class="{{grayFont}}">
+                        {{crtTime}}
+                    </div>
+                    <div class="{{grayFont}}">
+                        {{message}}
+                    </div>
+                </li>	                       
+            </ul>
+
+            <div class="ios-fixed-hack"></div>
+            
+            <footer id="bulletinBtn">
+                全部标记为已读
+            </footer>
+        </div>
+
+        <div class="each-common  active">
+            <ul id="underSelect" class="underSelect-list">                
+                <li data-id="{{id}}">
+                    <div class="{{grayFont}}">
+                        {{crtTime}}
+                    </div>
+                    <div class="{{grayFont}}">
+                        {{content}}<a class="linkSkip" data-href="{{linkUrl}}">{{linkBtnTxt}}</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="ios-fixed-hack"></div>
+
+            <footer id="underSelectBtn">
+                全部标记为已读
+            </footer>
+        </div>
+    </main>
+    
+    <script type="text/javascript">
+        require('mine_message/mine_message');
+    </script>
+</body>
+</html>
